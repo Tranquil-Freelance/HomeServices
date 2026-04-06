@@ -1,0 +1,3901 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ashade Theme\n"
+"POT-Creation-Date: 2024-12-15 17:37+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: Shadow Themes <support@shadow-themes.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e;esc_attr__;esc_attr_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets/js/lib\n"
+
+#: 404.php:17 template-parts/protected.php:47
+msgid "Previous Page"
+msgstr ""
+
+#: 404.php:18 inc/classes/class-base.php:4216 inc/metabox.php:373
+#: inc/metabox.php:3138 template-parts/albums/ribbon.php:22
+#: template-parts/albums/slider.php:33 template-parts/back-to-top.php:18
+msgid "Return"
+msgstr ""
+
+#: 404.php:22
+msgid "404"
+msgstr ""
+
+#: 404.php:23
+msgid "Oops! Page not found"
+msgstr ""
+
+#: 404.php:27
+msgid "Return To"
+msgstr ""
+
+#: 404.php:28
+msgid "Home"
+msgstr ""
+
+#: archive.php:52 index.php:51
+msgid "You do not have any posts. Create your first post to show here."
+msgstr ""
+
+#: comments.php:29
+msgid "Our Conversation"
+msgstr ""
+
+#: comments.php:30 comments.php:35 template-parts/elements/post-listing.php:99
+#: template-parts/post-listing.php:102
+msgid "Comment"
+msgstr ""
+
+#: comments.php:30 comments.php:35 template-parts/elements/post-listing.php:99
+#: template-parts/post-listing.php:102
+msgid "Comments"
+msgstr ""
+
+#: comments.php:34
+msgid "What people talk"
+msgstr ""
+
+#: comments.php:59
+msgid "Have Questions?"
+msgstr ""
+
+#: comments.php:60
+msgid "Let's Discuss"
+msgstr ""
+
+#: comments.php:62
+msgid "Tell us about your thoughts"
+msgstr ""
+
+#: comments.php:63
+msgid "Write message"
+msgstr ""
+
+#: comments.php:92 woocommerce/single-product/review.php:18
+msgid "Author"
+msgstr ""
+
+#: comments.php:99 woocommerce/single-product/review.php:28
+msgid "Edit"
+msgstr ""
+
+#: comments.php:104
+msgid "Reply"
+msgstr ""
+
+#: functions.php:26 inc/classes/class-base.php:627
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php:53
+msgid "Mobile Menu"
+msgstr ""
+
+#: functions.php:60 inc/classes/class-base.php:4382
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:156 functions.php:173 functions.php:189 functions.php:206
+msgid "Blog Post"
+msgstr ""
+
+#: functions.php:174 functions.php:190 functions.php:207
+#: woocommerce/cart/cart.php:44 woocommerce/content-product_cat.php:22
+#: woocommerce/order/order-details.php:40
+msgid "Product"
+msgstr ""
+
+#: functions.php:276 functions.php:277 template-parts/page-title.php:214
+#: template-parts/page-title.php:221
+msgid "Category"
+msgstr ""
+
+#: functions.php:316
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:317
+msgid "Default sidebar widgets."
+msgstr ""
+
+#: functions.php:325
+msgid "Aside Bar"
+msgstr ""
+
+#: functions.php:326
+msgid "Widgets for toggled aside panel."
+msgstr ""
+
+#: functions.php:335
+msgid "WooCommerce Sidebar"
+msgstr ""
+
+#: functions.php:336
+msgid "Widgets for WooCommerce product listing."
+msgstr ""
+
+#: functions.php:499 inc/ajax.php:14
+msgid "Your permissions level is not enough to enter this page."
+msgstr ""
+
+#: functions.php:551
+msgid "Ashade Dummy Content"
+msgstr ""
+
+#: functions.php:557
+msgid ""
+"Please, be sure that all required plugins are installed and activated before "
+"importing demo content."
+msgstr ""
+
+#: inc/ajax.php:19
+msgid "Theme Settings has reset to defaults."
+msgstr ""
+
+#: inc/classes/class-base.php:77
+msgid "Site Logo"
+msgstr ""
+
+#: inc/classes/class-base.php:85 inc/classes/class-base.php:109
+msgid "Logo Image"
+msgstr ""
+
+#: inc/classes/class-base.php:88 inc/metabox.php:1585
+msgid "Image"
+msgstr ""
+
+#: inc/classes/class-base.php:89 inc/classes/class-base.php:4597
+msgid "Text"
+msgstr ""
+
+#: inc/classes/class-base.php:90 inc/metabox.php:597 inc/metabox.php:662
+#: inc/metabox.php:1032 inc/metabox.php:1275 inc/metabox.php:1307
+#: inc/metabox.php:1994 inc/metabox.php:2059 inc/metabox.php:2452
+#: inc/metabox.php:2463 inc/metabox.php:2474 inc/metabox.php:2485
+#: inc/metabox.php:2496 inc/metabox.php:2916
+msgid "Hide"
+msgstr ""
+
+#: inc/classes/class-base.php:118
+msgid "Retina Logo"
+msgstr ""
+
+#: inc/classes/class-base.php:119
+msgid ""
+"Retina Ready Logo Image should be double size. Example: 220x80px logo will "
+"displays like 110x40px."
+msgstr ""
+
+#: inc/classes/class-base.php:129
+msgid "Logo Text"
+msgstr ""
+
+#: inc/classes/class-base.php:149 inc/classes/class-base.php:633
+#: inc/classes/class-base.php:783 inc/classes/class-base.php:903
+#: inc/classes/class-base.php:938 inc/classes/class-base.php:1280
+msgid "Font Family"
+msgstr ""
+
+#: inc/classes/class-base.php:159 inc/classes/class-base.php:640
+#: inc/classes/class-base.php:790 inc/classes/class-base.php:910
+#: inc/classes/class-base.php:945 inc/classes/class-base.php:1287
+msgid ""
+"Notice: Before choosing, make sure that the current font supports this "
+"weight."
+msgstr ""
+
+#: inc/classes/class-base.php:160 inc/classes/class-base.php:641
+#: inc/classes/class-base.php:791 inc/classes/class-base.php:911
+#: inc/classes/class-base.php:946 inc/classes/class-base.php:1288
+msgid "Font Weight"
+msgstr ""
+
+#: inc/classes/class-base.php:170 inc/classes/class-base.php:648
+#: inc/classes/class-base.php:798 inc/classes/class-base.php:998
+#: inc/classes/class-base.php:1045 inc/classes/class-base.php:1092
+#: inc/classes/class-base.php:1139 inc/classes/class-base.php:1186
+#: inc/classes/class-base.php:1233 inc/classes/class-base.php:1340
+#: inc/classes/class-base.php:1387 inc/classes/class-base.php:1434
+#: inc/classes/class-base.php:1481 inc/classes/class-base.php:1528
+#: inc/classes/class-base.php:1575 inc/classes/class-base.php:1629
+#: inc/classes/class-base.php:1760 inc/classes/class-base.php:1860
+#: inc/classes/class-base.php:2311 inc/classes/class-base.php:2570
+#: inc/classes/class-base.php:2717 inc/classes/class-base.php:4264
+msgid "Font Size, PX"
+msgstr ""
+
+#: inc/classes/class-base.php:182 inc/classes/class-base.php:657
+#: inc/classes/class-base.php:807 inc/classes/class-base.php:1007
+#: inc/classes/class-base.php:1054 inc/classes/class-base.php:1101
+#: inc/classes/class-base.php:1148 inc/classes/class-base.php:1195
+#: inc/classes/class-base.php:1242 inc/classes/class-base.php:1349
+#: inc/classes/class-base.php:1396 inc/classes/class-base.php:1443
+#: inc/classes/class-base.php:1490 inc/classes/class-base.php:1537
+#: inc/classes/class-base.php:1584 inc/classes/class-base.php:1638
+#: inc/classes/class-base.php:1769 inc/classes/class-base.php:1869
+#: inc/classes/class-base.php:2320 inc/classes/class-base.php:2579
+#: inc/classes/class-base.php:2726 inc/classes/class-base.php:4273
+msgid "Line Height, PX"
+msgstr ""
+
+#: inc/classes/class-base.php:194 inc/classes/class-base.php:666
+#: inc/classes/class-base.php:816 inc/classes/class-base.php:1016
+#: inc/classes/class-base.php:1063 inc/classes/class-base.php:1110
+#: inc/classes/class-base.php:1157 inc/classes/class-base.php:1204
+#: inc/classes/class-base.php:1251 inc/classes/class-base.php:1358
+#: inc/classes/class-base.php:1405 inc/classes/class-base.php:1452
+#: inc/classes/class-base.php:1499 inc/classes/class-base.php:1546
+#: inc/classes/class-base.php:1593 inc/classes/class-base.php:1647
+#: inc/classes/class-base.php:1778 inc/classes/class-base.php:1878
+#: inc/classes/class-base.php:2329 inc/classes/class-base.php:2588
+#: inc/classes/class-base.php:2735 inc/classes/class-base.php:4282
+msgid "Letter Spacing"
+msgstr ""
+
+#: inc/classes/class-base.php:209 inc/classes/class-base.php:678
+#: inc/classes/class-base.php:828 inc/classes/class-base.php:918
+#: inc/classes/class-base.php:953 inc/classes/class-base.php:1295
+#: inc/classes/class-base.php:1659 inc/classes/class-base.php:1790
+#: inc/classes/class-base.php:1890 inc/classes/class-base.php:2341
+#: inc/classes/class-base.php:2600 inc/classes/class-base.php:2747
+#: inc/classes/class-base.php:4325 inc/classes/class-base.php:4649
+msgid "Uppercase"
+msgstr ""
+
+#: inc/classes/class-base.php:219 inc/classes/class-base.php:685
+#: inc/classes/class-base.php:835 inc/classes/class-base.php:925
+#: inc/classes/class-base.php:960 inc/classes/class-base.php:1302
+#: inc/classes/class-base.php:1666 inc/classes/class-base.php:1797
+#: inc/classes/class-base.php:1897 inc/classes/class-base.php:2348
+#: inc/classes/class-base.php:2607 inc/classes/class-base.php:2754
+#: inc/classes/class-base.php:4332 inc/classes/class-base.php:4660
+msgid "Italic"
+msgstr ""
+
+#: inc/classes/class-base.php:229
+msgid "Logo Color"
+msgstr ""
+
+#: inc/classes/class-base.php:249
+msgid "Logo Padding"
+msgstr ""
+
+#: inc/classes/class-base.php:262 inc/metabox.php:168
+msgid "General Settings"
+msgstr ""
+
+#: inc/classes/class-base.php:268
+msgid "Dashboard Settings"
+msgstr ""
+
+#: inc/classes/class-base.php:274
+msgid "Theme' Plugins Notifications"
+msgstr ""
+
+#: inc/classes/class-base.php:275
+msgid ""
+"Turn off to hide recommended and required plugins notification at the top of "
+"the dashboard."
+msgstr ""
+
+#: inc/classes/class-base.php:282
+msgid "Disable Block editor for Widgets"
+msgstr ""
+
+#: inc/classes/class-base.php:283
+msgid ""
+"Turning off this option, you will be able to edit sidebars with the "
+"Gutenberg Block editor, but it can break the visual part."
+msgstr ""
+
+#: inc/classes/class-base.php:290
+msgid "Preloading Settings"
+msgstr ""
+
+#: inc/classes/class-base.php:296
+msgid "Lazy Image Loading"
+msgstr ""
+
+#: inc/classes/class-base.php:297
+msgid ""
+"With enabling this option your images will load only when they are into "
+"view. It helps to improve website loading speed."
+msgstr ""
+
+#: inc/classes/class-base.php:312
+msgid "Page Loading Animations"
+msgstr ""
+
+#: inc/classes/class-base.php:315 inc/classes/class-base.php:335
+msgid "Full"
+msgstr ""
+
+#: inc/classes/class-base.php:316 inc/classes/class-base.php:336
+#: inc/classes/class-base.php:3671 inc/metabox.php:1259 inc/metabox.php:2026
+msgid "Fade"
+msgstr ""
+
+#: inc/classes/class-base.php:317 inc/classes/class-base.php:337
+#: inc/classes/class-base.php:2944 inc/classes/class-base.php:3051
+#: inc/classes/class-base.php:3541 inc/classes/class-base.php:3556
+#: inc/classes/class-base.php:3581 inc/classes/class-base.php:3816
+#: inc/classes/class-base.php:4390 inc/classes/class-base.php:5281
+#: inc/metabox.php:135 inc/metabox.php:1493 inc/metabox.php:1764
+#: inc/metabox.php:1782 inc/metabox.php:1814 inc/metabox.php:1958
+#: inc/metabox.php:2265 inc/metabox.php:2314 inc/metabox.php:2409
+#: inc/metabox.php:2775 inc/metabox.php:3192
+msgid "None"
+msgstr ""
+
+#: inc/classes/class-base.php:332
+msgid "Page Leaving Animations"
+msgstr ""
+
+#: inc/classes/class-base.php:344
+msgid "Content Features"
+msgstr ""
+
+#: inc/classes/class-base.php:350 inc/metabox.php:95 inc/metabox.php:1450
+#: inc/metabox.php:2143 inc/metabox.php:2622 inc/metabox.php:2735
+msgid "Title and Back to Top Layout"
+msgstr ""
+
+#: inc/classes/class-base.php:353 inc/classes/class-base.php:3637
+#: inc/metabox.php:99 inc/metabox.php:1216 inc/metabox.php:1455
+#: inc/metabox.php:1927 inc/metabox.php:2147 inc/metabox.php:2626
+#: inc/metabox.php:2739
+msgid "Vertical"
+msgstr ""
+
+#: inc/classes/class-base.php:354 inc/metabox.php:100 inc/metabox.php:1456
+#: inc/metabox.php:2148 inc/metabox.php:2627 inc/metabox.php:2740
+msgid "Horizontal"
+msgstr ""
+
+#: inc/classes/class-base.php:361
+msgid "Magic Cursor"
+msgstr ""
+
+#: inc/classes/class-base.php:362
+msgid ""
+"Enable interactive mouse cursor, that changes its appearance depending on "
+"the current event"
+msgstr ""
+
+#: inc/classes/class-base.php:369
+msgid "Smooth Scroll"
+msgstr ""
+
+#: inc/classes/class-base.php:370
+msgid "Enable smooth content scrolling feature"
+msgstr ""
+
+#: inc/classes/class-base.php:377
+msgid "Native Smooth Scroll for Touch"
+msgstr ""
+
+#: inc/classes/class-base.php:378
+msgid ""
+"Touch devices already have their own smooth scroll, and it is recommended to "
+"use this option to disable the additional smooth scroll for performance."
+msgstr ""
+
+#: inc/classes/class-base.php:388 inc/metabox.php:117 inc/metabox.php:1462
+#: inc/metabox.php:2187 inc/metabox.php:2649 inc/metabox.php:2757
+msgid "Back to Top"
+msgstr ""
+
+#: inc/classes/class-base.php:389
+msgid "Enable \"Back to Top\" button"
+msgstr ""
+
+#: inc/classes/class-base.php:396
+msgid "Back to Top on Mobile"
+msgstr ""
+
+#: inc/classes/class-base.php:397
+msgid "Enable \"Back to Top\" button for mobile layout."
+msgstr ""
+
+#: inc/classes/class-base.php:408
+msgid "Body Spotlight"
+msgstr ""
+
+#: inc/classes/class-base.php:409
+msgid "Add spotlight effect to body background"
+msgstr ""
+
+#: inc/classes/class-base.php:416
+msgid "Spotlight Color"
+msgstr ""
+
+#: inc/classes/class-base.php:425
+msgid "Content Protection"
+msgstr ""
+
+#: inc/classes/class-base.php:431
+msgid "Right Click Protection"
+msgstr ""
+
+#: inc/classes/class-base.php:432
+msgid "Disable website context menu."
+msgstr ""
+
+#: inc/classes/class-base.php:439
+msgid "Show Message on Right Click"
+msgstr ""
+
+#: inc/classes/class-base.php:440
+msgid ""
+"Show an alert box with a message, when the user tries to make a right click "
+"action."
+msgstr ""
+
+#: inc/classes/class-base.php:450
+msgid "Write your message"
+msgstr ""
+
+#: inc/classes/class-base.php:468
+msgid "Image Dragging Protection"
+msgstr ""
+
+#: inc/classes/class-base.php:469
+msgid ""
+"Protecting your images from stealing, with dragging into the browser address "
+"bar."
+msgstr ""
+
+#: inc/classes/class-base.php:476
+msgid "Lightbox Settings"
+msgstr ""
+
+#: inc/classes/class-base.php:482
+msgid "Enable Image Zoom"
+msgstr ""
+
+#: inc/classes/class-base.php:489
+msgid "Click Overlay to Close"
+msgstr ""
+
+#: inc/classes/class-base.php:496
+msgid "Color Scheme"
+msgstr ""
+
+#: inc/classes/class-base.php:502
+msgid "Scheme Color 01"
+msgstr ""
+
+#: inc/classes/class-base.php:503
+msgid "Used for Body, Overlays, Input Background"
+msgstr ""
+
+#: inc/classes/class-base.php:509
+msgid "Scheme Color 02"
+msgstr ""
+
+#: inc/classes/class-base.php:510
+msgid "Used for Blocks Background, Aside Background"
+msgstr ""
+
+#: inc/classes/class-base.php:516
+msgid "Scheme Color 03"
+msgstr ""
+
+#: inc/classes/class-base.php:517
+msgid "Used as Text Color in content and Inputs"
+msgstr ""
+
+#: inc/classes/class-base.php:523
+msgid "Scheme Color 04"
+msgstr ""
+
+#: inc/classes/class-base.php:524
+msgid ""
+"Used for Headings, Titles, Links, Main Menu, Some Hover Effects and bright "
+"Accents"
+msgstr ""
+
+#: inc/classes/class-base.php:530
+msgid "Scheme Color 05"
+msgstr ""
+
+#: inc/classes/class-base.php:531
+msgid "Used for Overheads, Contact Icons Accent, etc"
+msgstr ""
+
+#: inc/classes/class-base.php:537
+msgid "Scheme Color 06"
+msgstr ""
+
+#: inc/classes/class-base.php:538
+msgid "Used for Input and Buttons Borders, Table Borders, etc"
+msgstr ""
+
+#: inc/classes/class-base.php:544
+msgid "Custom Post Types"
+msgstr ""
+
+#: inc/classes/class-base.php:545 inc/classes/class-base.php:3303
+#: inc/classes/class-base.php:3712
+msgid ""
+"Note: To use that features you need to install and activate Shadow Core "
+"Plugin."
+msgstr ""
+
+#: inc/classes/class-base.php:551
+msgid "Enable Albums Post Type"
+msgstr ""
+
+#: inc/classes/class-base.php:558
+msgid "Albums Post Type Label"
+msgstr ""
+
+#: inc/classes/class-base.php:567
+msgid "Albums Post Type Slug"
+msgstr ""
+
+#: inc/classes/class-base.php:568 inc/classes/class-base.php:578
+#: inc/classes/class-base.php:612
+msgid "Notice: use only lowercase"
+msgstr ""
+
+#: inc/classes/class-base.php:577
+msgid "Albums Category Slug"
+msgstr ""
+
+#: inc/classes/class-base.php:595
+msgid "Enable Clients Post Type"
+msgstr ""
+
+#: inc/classes/class-base.php:602
+msgid "Clients Post Type Label"
+msgstr ""
+
+#: inc/classes/class-base.php:611
+msgid "Clients Post Type Slug"
+msgstr ""
+
+#: inc/classes/class-base.php:621 inc/classes/class-base.php:2298
+#: inc/classes/class-base.php:2557 inc/classes/class-base.php:4251
+#: inc/classes/class-base.php:4319 inc/classes/class-base.php:4639
+msgid "Typography"
+msgstr ""
+
+#: inc/classes/class-base.php:701 inc/classes/class-base.php:862
+#: inc/classes/class-base.php:976 inc/classes/class-base.php:1318
+#: inc/classes/class-base.php:1813 inc/classes/class-base.php:1955
+#: inc/classes/class-base.php:2065 inc/classes/class-base.php:2173
+#: inc/classes/class-base.php:2364 inc/classes/class-base.php:2623
+#: inc/classes/class-base.php:2770 inc/classes/class-base.php:4047
+#: inc/classes/class-base.php:4348 inc/classes/class-base.php:4503
+#: inc/classes/class-base.php:4683
+msgid "Customize Colors?"
+msgstr ""
+
+#: inc/classes/class-base.php:708 inc/classes/class-base.php:4513
+#: inc/classes/class-base.php:4693
+msgid "Default Color"
+msgstr ""
+
+#: inc/classes/class-base.php:717
+msgid "Default Opacity, %"
+msgstr ""
+
+#: inc/classes/class-base.php:731 inc/classes/class-base.php:4523
+#: inc/classes/class-base.php:4703
+msgid "Hover Color"
+msgstr ""
+
+#: inc/classes/class-base.php:740
+msgid "Hover Opacity, %"
+msgstr ""
+
+#: inc/classes/class-base.php:754 inc/classes/class-base.php:4533
+msgid "Active Color"
+msgstr ""
+
+#: inc/classes/class-base.php:763
+msgid "Active Opacity, %"
+msgstr ""
+
+#: inc/classes/class-base.php:777
+msgid "Content"
+msgstr ""
+
+#: inc/classes/class-base.php:842
+msgid "Paragraph Bottom Spacing"
+msgstr ""
+
+#: inc/classes/class-base.php:869 inc/classes/class-base.php:1820
+#: inc/classes/class-base.php:2091 inc/classes/class-base.php:2180
+#: inc/classes/class-base.php:2389 inc/classes/class-base.php:2648
+msgid "Text Color"
+msgstr ""
+
+#: inc/classes/class-base.php:878 inc/classes/class-base.php:2100
+#: inc/classes/class-base.php:2189
+msgid "Link Color"
+msgstr ""
+
+#: inc/classes/class-base.php:887 inc/classes/class-base.php:2109
+#: inc/classes/class-base.php:2198
+msgid "Link Hover Color"
+msgstr ""
+
+#: inc/classes/class-base.php:896
+msgid "Titles"
+msgstr ""
+
+#: inc/classes/class-base.php:897
+msgid "Font styles for page title, albums titles, etc."
+msgstr ""
+
+#: inc/classes/class-base.php:932
+msgid "Over Headings"
+msgstr ""
+
+#: inc/classes/class-base.php:983
+msgid "Over Heading Color"
+msgstr ""
+
+#: inc/classes/class-base.php:992 inc/classes/class-base.php:1334
+msgid "H1"
+msgstr ""
+
+#: inc/classes/class-base.php:1028 inc/classes/class-base.php:1075
+#: inc/classes/class-base.php:1122 inc/classes/class-base.php:1169
+#: inc/classes/class-base.php:1216 inc/classes/class-base.php:1263
+#: inc/classes/class-base.php:1370 inc/classes/class-base.php:1417
+#: inc/classes/class-base.php:1464 inc/classes/class-base.php:1511
+#: inc/classes/class-base.php:1558 inc/classes/class-base.php:1605
+msgid "Bottom Spacing"
+msgstr ""
+
+#: inc/classes/class-base.php:1039 inc/classes/class-base.php:1381
+msgid "H2"
+msgstr ""
+
+#: inc/classes/class-base.php:1086 inc/classes/class-base.php:1428
+msgid "H3"
+msgstr ""
+
+#: inc/classes/class-base.php:1133 inc/classes/class-base.php:1475
+msgid "H4"
+msgstr ""
+
+#: inc/classes/class-base.php:1180 inc/classes/class-base.php:1522
+msgid "H5"
+msgstr ""
+
+#: inc/classes/class-base.php:1227 inc/classes/class-base.php:1569
+msgid "H6"
+msgstr ""
+
+#: inc/classes/class-base.php:1274
+msgid "Headings"
+msgstr ""
+
+#: inc/classes/class-base.php:1325
+msgid "Heading Color"
+msgstr ""
+
+#: inc/classes/class-base.php:1616
+msgid "Blockquotes"
+msgstr ""
+
+#: inc/classes/class-base.php:1622 inc/classes/class-base.php:1753
+#: inc/classes/class-base.php:1853 inc/classes/class-base.php:2304
+#: inc/classes/class-base.php:2563 inc/classes/class-base.php:2710
+#: inc/classes/class-base.php:4257
+msgid "Use Font Family"
+msgstr ""
+
+#: inc/classes/class-base.php:1682
+msgid "Quote Symbol Size, PX"
+msgstr ""
+
+#: inc/classes/class-base.php:1693 inc/classes/class-base.php:1924
+#: inc/classes/class-base.php:2124
+msgid "Side Spacing, PX"
+msgstr ""
+
+#: inc/classes/class-base.php:1704 inc/classes/class-base.php:1935
+#: inc/classes/class-base.php:2014 inc/classes/class-base.php:2135
+#: inc/classes/class-base.php:2246 inc/classes/class-base.php:2505
+msgid "Bottom Spacing, PX"
+msgstr ""
+
+#: inc/classes/class-base.php:1715
+msgid "Citation"
+msgstr ""
+
+#: inc/classes/class-base.php:1721
+msgid "Citation Align"
+msgstr ""
+
+#: inc/classes/class-base.php:1724 inc/classes/class-base.php:2035
+#: inc/classes/class-base.php:2943 inc/classes/class-base.php:3052
+#: inc/classes/class-base.php:4310 inc/classes/class-base.php:4393
+#: inc/classes/class-base.php:4581 inc/classes/class-base.php:5280
+#: inc/metabox.php:137 inc/metabox.php:1094 inc/metabox.php:1522
+#: inc/metabox.php:2333 inc/metabox.php:2774
+msgid "Left"
+msgstr ""
+
+#: inc/classes/class-base.php:1725 inc/classes/class-base.php:2036
+#: inc/classes/class-base.php:4311 inc/classes/class-base.php:4394
+#: inc/classes/class-base.php:4582 inc/metabox.php:1093 inc/metabox.php:1523
+#: inc/metabox.php:2334
+msgid "Center"
+msgstr ""
+
+#: inc/classes/class-base.php:1726 inc/classes/class-base.php:2037
+#: inc/classes/class-base.php:2945 inc/classes/class-base.php:3053
+#: inc/classes/class-base.php:4312 inc/classes/class-base.php:4395
+#: inc/classes/class-base.php:4583 inc/classes/class-base.php:5282
+#: inc/metabox.php:136 inc/metabox.php:1095 inc/metabox.php:1524
+#: inc/metabox.php:2335 inc/metabox.php:2776
+msgid "Right"
+msgstr ""
+
+#: inc/classes/class-base.php:1733 inc/classes/class-base.php:1913
+msgid "Top Spacing, PX"
+msgstr ""
+
+#: inc/classes/class-base.php:1829
+msgid "Symbol Color"
+msgstr ""
+
+#: inc/classes/class-base.php:1838
+msgid "Citation Color"
+msgstr ""
+
+#: inc/classes/class-base.php:1847
+msgid "Dropcaps"
+msgstr ""
+
+#: inc/classes/class-base.php:1962
+msgid "Dropcap Color"
+msgstr ""
+
+#: inc/classes/class-base.php:1971
+msgid "Tables"
+msgstr ""
+
+#: inc/classes/class-base.php:1977
+msgid "Border Collapse"
+msgstr ""
+
+#: inc/classes/class-base.php:1984 inc/classes/class-base.php:2270
+#: inc/classes/class-base.php:2529
+msgid "Border Style"
+msgstr ""
+
+#: inc/classes/class-base.php:1991 inc/classes/class-base.php:2277
+#: inc/classes/class-base.php:2536
+msgid "Border Width, PX"
+msgstr ""
+
+#: inc/classes/class-base.php:2025
+msgid "Cell Padding, PX"
+msgstr ""
+
+#: inc/classes/class-base.php:2032
+msgid "Cell Align"
+msgstr ""
+
+#: inc/classes/class-base.php:2044
+msgid "Cell Vertical Align"
+msgstr ""
+
+#: inc/classes/class-base.php:2047 template-parts/back-to-top-mobile.php:14
+#: template-parts/back-to-top.php:12
+msgid "Top"
+msgstr ""
+
+#: inc/classes/class-base.php:2048
+msgid "Middle"
+msgstr ""
+
+#: inc/classes/class-base.php:2049
+msgid "Bottom"
+msgstr ""
+
+#: inc/classes/class-base.php:2072 inc/classes/class-base.php:2398
+#: inc/classes/class-base.php:2657
+msgid "Border Color"
+msgstr ""
+
+#: inc/classes/class-base.php:2082 inc/classes/class-base.php:2380
+#: inc/classes/class-base.php:2639
+msgid "Background Color"
+msgstr ""
+
+#: inc/classes/class-base.php:2118
+msgid "Lists"
+msgstr ""
+
+#: inc/classes/class-base.php:2146
+msgid "List Item Padding, PX"
+msgstr ""
+
+#: inc/classes/class-base.php:2153
+msgid "Unordered List Style"
+msgstr ""
+
+#: inc/classes/class-base.php:2206
+msgid "Forms and Fields"
+msgstr ""
+
+#: inc/classes/class-base.php:2212
+msgid "Form Fields"
+msgstr ""
+
+#: inc/classes/class-base.php:2218 inc/classes/class-base.php:2488
+msgid "Size"
+msgstr ""
+
+#: inc/classes/class-base.php:2224 inc/classes/class-base.php:2494
+msgid "Field Height, PX"
+msgstr ""
+
+#: inc/classes/class-base.php:2235
+msgid "Textarea Height, PX"
+msgstr ""
+
+#: inc/classes/class-base.php:2257 inc/classes/class-base.php:2516
+msgid "Item Padding, PX"
+msgstr ""
+
+#: inc/classes/class-base.php:2264 inc/classes/class-base.php:2523
+msgid "Border"
+msgstr ""
+
+#: inc/classes/class-base.php:2291 inc/classes/class-base.php:2550
+msgid "Border Radius, PX"
+msgstr ""
+
+#: inc/classes/class-base.php:2371 inc/classes/class-base.php:2630
+msgid "Default State"
+msgstr ""
+
+#: inc/classes/class-base.php:2408 inc/classes/class-base.php:2667
+msgid "Hover State"
+msgstr ""
+
+#: inc/classes/class-base.php:2417 inc/classes/class-base.php:2676
+msgid "Hover Background Color"
+msgstr ""
+
+#: inc/classes/class-base.php:2426 inc/classes/class-base.php:2685
+msgid "Hover Text Color"
+msgstr ""
+
+#: inc/classes/class-base.php:2435 inc/classes/class-base.php:2694
+msgid "Hover Border Color"
+msgstr ""
+
+#: inc/classes/class-base.php:2445
+msgid "Focus State"
+msgstr ""
+
+#: inc/classes/class-base.php:2454
+msgid "Focus Background Color"
+msgstr ""
+
+#: inc/classes/class-base.php:2463
+msgid "Focus Text Color"
+msgstr ""
+
+#: inc/classes/class-base.php:2472
+msgid "Focus Border Color"
+msgstr ""
+
+#: inc/classes/class-base.php:2482
+msgid "Form Button"
+msgstr ""
+
+#: inc/classes/class-base.php:2704
+msgid "Form Notifications"
+msgstr ""
+
+#: inc/classes/class-base.php:2777
+msgid "Normal Color"
+msgstr ""
+
+#: inc/classes/class-base.php:2786
+msgid "Error Color"
+msgstr ""
+
+#: inc/classes/class-base.php:2797
+msgid "Header Settings"
+msgstr ""
+
+#: inc/classes/class-base.php:2803
+msgid "Alternative Mobile Menu"
+msgstr ""
+
+#: inc/classes/class-base.php:2804
+msgid ""
+"If enabled alternative menu will be used for mobile devices instead of the "
+"main menu."
+msgstr ""
+
+#: inc/classes/class-base.php:2820
+msgid "Sticky Header"
+msgstr ""
+
+#: inc/classes/class-base.php:2827
+msgid "Hide on Scroll Down"
+msgstr ""
+
+#: inc/classes/class-base.php:2828
+msgid ""
+"If enabled, the header will hide on scroll down and shows again on scroll up."
+msgstr ""
+
+#: inc/classes/class-base.php:2838
+msgid "Header Background on Scroll"
+msgstr ""
+
+#: inc/classes/class-base.php:2841
+msgid "Transparent"
+msgstr ""
+
+#: inc/classes/class-base.php:2842
+msgid "Gradient"
+msgstr ""
+
+#: inc/classes/class-base.php:2843
+msgid "Solid"
+msgstr ""
+
+#: inc/classes/class-base.php:2852
+msgid "Header Background Color"
+msgstr ""
+
+#: inc/classes/class-base.php:2872
+msgid "Header Layout"
+msgstr ""
+
+#: inc/classes/class-base.php:2880
+msgid "Logo Left (Menu Right)"
+msgstr ""
+
+#: inc/classes/class-base.php:2885
+msgid "Logo Center (Menu Center)"
+msgstr ""
+
+#: inc/classes/class-base.php:2890
+msgid "Logo Right (Menu Left)"
+msgstr ""
+
+#: inc/classes/class-base.php:2909
+msgid "Enable Aside Bar"
+msgstr ""
+
+#: inc/classes/class-base.php:2916
+msgid "Use Text Label?"
+msgstr ""
+
+#: inc/classes/class-base.php:2923
+msgid "Label Text"
+msgstr ""
+
+#: inc/classes/class-base.php:2934
+msgid "Sidebar Settings"
+msgstr ""
+
+#: inc/classes/class-base.php:2940 inc/classes/class-base.php:3047
+#: inc/metabox.php:131 inc/metabox.php:2770
+msgid "Sidebar Position"
+msgstr ""
+
+#: inc/classes/class-base.php:2954 inc/metabox.php:31
+msgid "Page Settings"
+msgstr ""
+
+#: inc/classes/class-base.php:2960 inc/classes/class-base.php:3718
+#: inc/metabox.php:106 inc/metabox.php:2633
+msgid "Show Page Title"
+msgstr ""
+
+#: inc/classes/class-base.php:2976 inc/classes/class-base.php:3179
+#: inc/classes/class-base.php:3459 inc/classes/class-base.php:3734
+#: inc/metabox.php:59 inc/metabox.php:1402 inc/metabox.php:2107
+#: inc/metabox.php:2586 inc/metabox.php:2699
+msgid "Content Under Header"
+msgstr ""
+
+#: inc/classes/class-base.php:2977 inc/classes/class-base.php:3070
+#: inc/classes/class-base.php:3180 inc/classes/class-base.php:3460
+#: inc/classes/class-base.php:3735
+msgid "If enabled content will ignore header height."
+msgstr ""
+
+#: inc/classes/class-base.php:2984 inc/classes/class-base.php:3077
+#: inc/classes/class-base.php:3187 inc/classes/class-base.php:3470
+#: inc/classes/class-base.php:3742 inc/metabox.php:70 inc/metabox.php:1413
+#: inc/metabox.php:2118 inc/metabox.php:2597 inc/metabox.php:2710
+msgid "Content Top Spacing"
+msgstr ""
+
+#: inc/classes/class-base.php:2991 inc/classes/class-base.php:3084
+#: inc/classes/class-base.php:3194 inc/classes/class-base.php:3480
+#: inc/classes/class-base.php:3749 inc/metabox.php:81 inc/metabox.php:1424
+#: inc/metabox.php:2129 inc/metabox.php:2608 inc/metabox.php:2721
+msgid "Content Bottom Spacing"
+msgstr ""
+
+#: inc/classes/class-base.php:3007 inc/classes/class-base.php:3243
+#: inc/metabox.php:146 inc/metabox.php:2807
+msgid "Allow Comments"
+msgstr ""
+
+#: inc/classes/class-base.php:3014
+msgid "Blog Settings"
+msgstr ""
+
+#: inc/classes/class-base.php:3020
+msgid "Posts Listing"
+msgstr ""
+
+#: inc/classes/class-base.php:3026
+msgid "Post Thumbnail Size"
+msgstr ""
+
+#: inc/classes/class-base.php:3029 inc/classes/class-base.php:5346
+msgid "Small"
+msgstr ""
+
+#: inc/classes/class-base.php:3030 inc/classes/class-base.php:3636
+#: inc/classes/class-base.php:5345 inc/metabox.php:1215 inc/metabox.php:1926
+msgid "Medium"
+msgstr ""
+
+#: inc/classes/class-base.php:3031 inc/classes/class-base.php:3635
+#: inc/classes/class-base.php:5344 inc/metabox.php:1214 inc/metabox.php:1925
+msgid "Large"
+msgstr ""
+
+#: inc/classes/class-base.php:3050 inc/metabox.php:48 inc/metabox.php:62
+#: inc/metabox.php:73 inc/metabox.php:84 inc/metabox.php:98 inc/metabox.php:109
+#: inc/metabox.php:120 inc/metabox.php:134 inc/metabox.php:149
+#: inc/metabox.php:177 inc/metabox.php:394 inc/metabox.php:1394
+#: inc/metabox.php:1405 inc/metabox.php:1416 inc/metabox.php:1427
+#: inc/metabox.php:1442 inc/metabox.php:1454 inc/metabox.php:1465
+#: inc/metabox.php:1622 inc/metabox.php:1641 inc/metabox.php:1711
+#: inc/metabox.php:1730 inc/metabox.php:1747 inc/metabox.php:1763
+#: inc/metabox.php:1781 inc/metabox.php:1797 inc/metabox.php:1813
+#: inc/metabox.php:1830 inc/metabox.php:1847 inc/metabox.php:1878
+#: inc/metabox.php:1908 inc/metabox.php:1924 inc/metabox.php:1941
+#: inc/metabox.php:1957 inc/metabox.php:2008 inc/metabox.php:2024
+#: inc/metabox.php:2096 inc/metabox.php:2110 inc/metabox.php:2121
+#: inc/metabox.php:2132 inc/metabox.php:2146 inc/metabox.php:2157
+#: inc/metabox.php:2173 inc/metabox.php:2190 inc/metabox.php:2208
+#: inc/metabox.php:2219 inc/metabox.php:2230 inc/metabox.php:2360
+#: inc/metabox.php:2375 inc/metabox.php:2392 inc/metabox.php:2408
+#: inc/metabox.php:2426 inc/metabox.php:2450 inc/metabox.php:2461
+#: inc/metabox.php:2472 inc/metabox.php:2483 inc/metabox.php:2494
+#: inc/metabox.php:2505 inc/metabox.php:2524 inc/metabox.php:2535
+#: inc/metabox.php:2557 inc/metabox.php:2575 inc/metabox.php:2589
+#: inc/metabox.php:2600 inc/metabox.php:2611 inc/metabox.php:2625
+#: inc/metabox.php:2636 inc/metabox.php:2652 inc/metabox.php:2666
+#: inc/metabox.php:2688 inc/metabox.php:2702 inc/metabox.php:2713
+#: inc/metabox.php:2724 inc/metabox.php:2738 inc/metabox.php:2749
+#: inc/metabox.php:2760 inc/metabox.php:2773 inc/metabox.php:2788
+#: inc/metabox.php:2799 inc/metabox.php:2810 inc/metabox.php:2831
+#: inc/metabox.php:2842 inc/metabox.php:2853 inc/metabox.php:2864
+#: inc/metabox.php:2875 inc/metabox.php:2903 inc/metabox.php:2926
+#: inc/metabox.php:3179 inc/metabox.php:3244 inc/metabox.php:3263
+msgid "Default"
+msgstr ""
+
+#: inc/classes/class-base.php:3069
+msgid "Content Uder Header"
+msgstr ""
+
+#: inc/classes/class-base.php:3100 inc/classes/class-base.php:3256
+#: inc/metabox.php:2828
+msgid "Show Post Meta"
+msgstr ""
+
+#: inc/classes/class-base.php:3107 inc/classes/class-base.php:3263
+#: inc/metabox.php:2839
+msgid "Show Post Author"
+msgstr ""
+
+#: inc/classes/class-base.php:3117 inc/classes/class-base.php:3273
+#: inc/metabox.php:2850
+msgid "Show Post Date"
+msgstr ""
+
+#: inc/classes/class-base.php:3127
+msgid "Show Comments Count"
+msgstr ""
+
+#: inc/classes/class-base.php:3137 inc/classes/class-base.php:3283
+#: inc/metabox.php:2861
+msgid "Show Post Category"
+msgstr ""
+
+#: inc/classes/class-base.php:3147 inc/classes/class-base.php:3293
+#: inc/metabox.php:2872
+msgid "Show Post Tags"
+msgstr ""
+
+#: inc/classes/class-base.php:3166
+msgid "Show Post Excerpts"
+msgstr ""
+
+#: inc/classes/class-base.php:3173
+msgid "Single Post Settings"
+msgstr ""
+
+#: inc/classes/class-base.php:3210
+msgid "Show Post Title"
+msgstr ""
+
+#: inc/classes/class-base.php:3229 inc/metabox.php:2785
+msgid "Show Featured Image"
+msgstr ""
+
+#: inc/classes/class-base.php:3236 inc/metabox.php:2796
+msgid "Post Navigation"
+msgstr ""
+
+#: inc/classes/class-base.php:3250 inc/metabox.php:2820
+msgid "Post Meta"
+msgstr ""
+
+#: inc/classes/class-base.php:3302
+msgid "Albums Settings"
+msgstr ""
+
+#: inc/classes/class-base.php:3309
+msgid "Default Album Style"
+msgstr ""
+
+#: inc/classes/class-base.php:3324 inc/metabox.php:694 inc/metabox.php:1159
+#: inc/metabox.php:1657
+msgid "Default Items Gap"
+msgstr ""
+
+#: inc/classes/class-base.php:3337 inc/metabox.php:710 inc/metabox.php:1175
+#: inc/metabox.php:1673
+msgid "Custom Gap, PX"
+msgstr ""
+
+#: inc/classes/class-base.php:3353 inc/metabox.php:727 inc/metabox.php:1192
+#: inc/metabox.php:1690
+msgid "Items Border Radius, PX"
+msgstr ""
+
+#: inc/classes/class-base.php:3377 inc/metabox.php:1139 inc/metabox.php:1706
+msgid "Content Width"
+msgstr ""
+
+#: inc/classes/class-base.php:3378 inc/metabox.php:1140 inc/metabox.php:1707
+msgid "This option is actual for \"Grid\" layouts only."
+msgstr ""
+
+#: inc/classes/class-base.php:3391
+msgid "Default Images Direction"
+msgstr ""
+
+#: inc/classes/class-base.php:3394 inc/metabox.php:263 inc/metabox.php:1623
+msgid "Normal"
+msgstr ""
+
+#: inc/classes/class-base.php:3395 inc/metabox.php:264 inc/metabox.php:1624
+msgid "Reverse"
+msgstr ""
+
+#: inc/classes/class-base.php:3396 inc/metabox.php:265 inc/metabox.php:612
+#: inc/metabox.php:1047 inc/metabox.php:1625
+msgid "Random"
+msgstr ""
+
+#: inc/classes/class-base.php:3412 inc/classes/class-base.php:3422
+msgid "Album Title"
+msgstr ""
+
+#: inc/classes/class-base.php:3433
+msgid "Show Back Button"
+msgstr ""
+
+#: inc/classes/class-base.php:3440
+msgid "Link to the Next Post"
+msgstr ""
+
+#: inc/classes/class-base.php:3490 inc/classes/class-base.php:3892
+#: inc/metabox.php:1827 inc/metabox.php:2663
+msgid "Allow Comments?"
+msgstr ""
+
+#: inc/classes/class-base.php:3491
+msgid ""
+"Actual only for Grid Layouts (Grid, Masonry, Bricks, Adjusted and Justified)"
+msgstr ""
+
+#: inc/classes/class-base.php:3510 inc/classes/class-base.php:3785
+#: inc/metabox.php:1727 inc/metabox.php:2372
+msgid "Columns Number"
+msgstr ""
+
+#: inc/classes/class-base.php:3513 inc/classes/class-base.php:3788
+#: inc/metabox.php:678 inc/metabox.php:1322 inc/metabox.php:1731
+#: inc/metabox.php:2376
+msgid "2 Columns"
+msgstr ""
+
+#: inc/classes/class-base.php:3514 inc/classes/class-base.php:3789
+#: inc/metabox.php:679 inc/metabox.php:1323 inc/metabox.php:1732
+#: inc/metabox.php:2377
+msgid "3 Columns"
+msgstr ""
+
+#: inc/classes/class-base.php:3515 inc/classes/class-base.php:3790
+#: inc/metabox.php:680 inc/metabox.php:1324 inc/metabox.php:1733
+#: inc/metabox.php:2378
+msgid "4 Columns"
+msgstr ""
+
+#: inc/classes/class-base.php:3525 inc/classes/class-base.php:3800
+#: inc/metabox.php:1744 inc/metabox.php:2389
+msgid "Bricks Layout"
+msgstr ""
+
+#: inc/classes/class-base.php:3528 inc/classes/class-base.php:3803
+#: inc/metabox.php:1748 inc/metabox.php:2393
+msgid "1x2 Items"
+msgstr ""
+
+#: inc/classes/class-base.php:3529 inc/classes/class-base.php:3804
+#: inc/metabox.php:1749 inc/metabox.php:2394
+msgid "2x3 Items"
+msgstr ""
+
+#: inc/classes/class-base.php:3539 inc/classes/class-base.php:3554
+#: inc/classes/class-base.php:3814
+msgid "Photos Caption"
+msgstr ""
+
+#: inc/classes/class-base.php:3542 inc/classes/class-base.php:3817
+#: inc/metabox.php:1765 inc/metabox.php:2410
+msgid "Under Photo"
+msgstr ""
+
+#: inc/classes/class-base.php:3543 inc/classes/class-base.php:3818
+#: inc/metabox.php:1766 inc/metabox.php:2411
+msgid "On Photo"
+msgstr ""
+
+#: inc/classes/class-base.php:3544 inc/classes/class-base.php:3819
+#: inc/metabox.php:1767 inc/metabox.php:2412
+msgid "On Hover"
+msgstr ""
+
+#: inc/classes/class-base.php:3557 inc/metabox.php:596 inc/metabox.php:663
+#: inc/metabox.php:1031 inc/metabox.php:1274 inc/metabox.php:1308
+#: inc/metabox.php:1783 inc/metabox.php:1993 inc/metabox.php:2060
+#: inc/metabox.php:2451 inc/metabox.php:2462 inc/metabox.php:2473
+#: inc/metabox.php:2484 inc/metabox.php:2495 inc/metabox.php:2915
+msgid "Show"
+msgstr ""
+
+#: inc/classes/class-base.php:3567
+msgid "Open images in Lightbox"
+msgstr ""
+
+#: inc/classes/class-base.php:3578 inc/metabox.php:1810
+msgid "Text in Lightbox"
+msgstr ""
+
+#: inc/classes/class-base.php:3582 inc/metabox.php:1815
+msgid "Caption"
+msgstr ""
+
+#: inc/classes/class-base.php:3583 inc/metabox.php:1816
+#: woocommerce/single-product/tabs/description.php:11
+msgid "Description"
+msgstr ""
+
+#: inc/classes/class-base.php:3594 inc/metabox.php:1858
+msgid "Approximate Row Height, PX"
+msgstr ""
+
+#: inc/classes/class-base.php:3608
+msgid "Spacing, PX"
+msgstr ""
+
+#: inc/classes/class-base.php:3622 inc/metabox.php:1905
+msgid "Justified Last Row"
+msgstr ""
+
+#: inc/classes/class-base.php:3632
+msgid "Layout"
+msgstr ""
+
+#: inc/classes/class-base.php:3647 inc/metabox.php:1794 inc/metabox.php:1938
+msgid "Allow Lightbox"
+msgstr ""
+
+#: inc/classes/class-base.php:3657 inc/metabox.php:1271 inc/metabox.php:2005
+msgid "Slider Navigation"
+msgstr ""
+
+#: inc/classes/class-base.php:3667 inc/metabox.php:2021
+msgid "Slide Effect"
+msgstr ""
+
+#: inc/classes/class-base.php:3670 inc/metabox.php:1258 inc/metabox.php:2025
+msgid "Parallax"
+msgstr ""
+
+#: inc/classes/class-base.php:3672 inc/metabox.php:1260 inc/metabox.php:2027
+msgid "Simple"
+msgstr ""
+
+#: inc/classes/class-base.php:3682 inc/metabox.php:2199
+msgid "Album Meta"
+msgstr ""
+
+#: inc/classes/class-base.php:3688 inc/metabox.php:2205
+msgid "Show Album Author"
+msgstr ""
+
+#: inc/classes/class-base.php:3695 inc/metabox.php:2216
+msgid "Show Album Date"
+msgstr ""
+
+#: inc/classes/class-base.php:3702 inc/metabox.php:2227
+msgid "Show Album Category"
+msgstr ""
+
+#: inc/classes/class-base.php:3711 inc/metabox.php:2241
+msgid "Client Settings"
+msgstr ""
+
+#: inc/classes/class-base.php:3765
+msgid "Default Gallery Style"
+msgstr ""
+
+#: inc/classes/class-base.php:3826 inc/metabox.php:2423
+msgid "Field for Captions"
+msgstr ""
+
+#: inc/classes/class-base.php:3828 inc/metabox.php:2427
+msgid "Use Title"
+msgstr ""
+
+#: inc/classes/class-base.php:3829 inc/metabox.php:2428
+msgid "Use Caption"
+msgstr ""
+
+#: inc/classes/class-base.php:3830 inc/metabox.php:2429
+msgid "Use Description"
+msgstr ""
+
+#: inc/classes/class-base.php:3846
+msgid "Show Filter"
+msgstr ""
+
+#: inc/classes/class-base.php:3853
+msgid "Show Images Count"
+msgstr ""
+
+#: inc/classes/class-base.php:3863 inc/metabox.php:2469
+msgid "Show Approval Buttons?"
+msgstr ""
+
+#: inc/classes/class-base.php:3870 inc/metabox.php:2480
+msgid "Show Image Zoom Button?"
+msgstr ""
+
+#: inc/classes/class-base.php:3877 inc/metabox.php:2491
+msgid "Show Download Button?"
+msgstr ""
+
+#: inc/classes/class-base.php:3884
+msgid "Buttons Always Visible?"
+msgstr ""
+
+#: inc/classes/class-base.php:3885
+msgid "If disabled - buttons will be shown on item hover."
+msgstr ""
+
+#: inc/classes/class-base.php:3908
+msgid "Notify Button"
+msgstr ""
+
+#: inc/classes/class-base.php:3909 inc/metabox.php:2521
+msgid ""
+"Note: To use that function you need to install and activate Shadow Core "
+"Plugin."
+msgstr ""
+
+#: inc/classes/class-base.php:3916 inc/metabox.php:2542
+msgid "Email Address"
+msgstr ""
+
+#: inc/classes/class-base.php:3917
+msgid "Your Email address, where notify email should be sent."
+msgstr ""
+
+#: inc/classes/class-base.php:3926
+msgid "Include Links to Images"
+msgstr ""
+
+#: inc/classes/class-base.php:3928
+msgid ""
+"Enabling this option will attach links to \"approved\" images in your "
+"notification email."
+msgstr ""
+
+#: inc/classes/class-base.php:3939
+msgid "Attachment Settings"
+msgstr ""
+
+#: inc/classes/class-base.php:3945
+msgid "Show Background"
+msgstr ""
+
+#: inc/classes/class-base.php:3952 inc/classes/class-base.php:4024
+#: inc/classes/class-base.php:4094 inc/metabox.php:3202
+msgid "Background Opacity, %"
+msgstr ""
+
+#: inc/classes/class-base.php:3966
+msgid "Background Blur"
+msgstr ""
+
+#: inc/classes/class-base.php:3989
+msgid "Show Title"
+msgstr ""
+
+#: inc/classes/class-base.php:3996
+msgid "Show Caption"
+msgstr ""
+
+#: inc/classes/class-base.php:4003
+msgid "Show Description"
+msgstr ""
+
+#: inc/classes/class-base.php:4012
+msgid "404 Page"
+msgstr ""
+
+#: inc/classes/class-base.php:4018 inc/classes/class-base.php:4088
+#: inc/metabox.php:3187
+msgid "Background Image"
+msgstr ""
+
+#: inc/classes/class-base.php:4054
+msgid "404 Title Color"
+msgstr ""
+
+#: inc/classes/class-base.php:4063
+msgid "Content Text Color"
+msgstr ""
+
+#: inc/classes/class-base.php:4073 inc/classes/class-base.php:4080
+#: inc/metabox.php:3176
+msgid "Maintenance Mode"
+msgstr ""
+
+#: inc/classes/class-base.php:4081
+msgid "Turns on or off the maintenance mode on your website."
+msgstr ""
+
+#: inc/classes/class-base.php:4105 inc/metabox.php:3222
+msgid "Countdown Date"
+msgstr ""
+
+#: inc/classes/class-base.php:4106
+msgid "Shows countdown timer to selected date."
+msgstr ""
+
+#: inc/classes/class-base.php:4115
+msgid "Countdown Labels"
+msgstr ""
+
+#: inc/classes/class-base.php:4133 inc/metabox.php:3260
+msgid "Show Contact Info"
+msgstr ""
+
+#: inc/classes/class-base.php:4139
+msgid "My Contacts and Socials"
+msgstr ""
+
+#: inc/classes/class-base.php:4140 inc/metabox.php:905 inc/metabox.php:907
+#: inc/metabox.php:2990 inc/metabox.php:2992 inc/metabox.php:3276
+#: inc/metabox.php:3279
+msgid "Contact List Overhead"
+msgstr ""
+
+#: inc/classes/class-base.php:4145
+msgid "How to Find Me"
+msgstr ""
+
+#: inc/classes/class-base.php:4146 inc/metabox.php:918 inc/metabox.php:920
+#: inc/metabox.php:3002 inc/metabox.php:3004 inc/metabox.php:3290
+#: inc/metabox.php:3293
+msgid "Contact List Title"
+msgstr ""
+
+#: inc/classes/class-base.php:4152 inc/metabox.php:931 inc/metabox.php:3014
+#: inc/metabox.php:3304
+msgid "Show List Icons?"
+msgstr ""
+
+#: inc/classes/class-base.php:4159 inc/metabox.php:944 inc/metabox.php:946
+#: inc/metabox.php:3026 inc/metabox.php:3028 inc/metabox.php:3318
+#: inc/metabox.php:3320
+msgid "Your Address"
+msgstr ""
+
+#: inc/classes/class-base.php:4165 inc/metabox.php:957 inc/metabox.php:959
+#: inc/metabox.php:3038 inc/metabox.php:3040 inc/metabox.php:3332
+#: inc/metabox.php:3335
+msgid "Your Phone"
+msgstr ""
+
+#: inc/classes/class-base.php:4171 inc/metabox.php:970 inc/metabox.php:972
+#: inc/metabox.php:3050 inc/metabox.php:3052 inc/metabox.php:3346
+#: inc/metabox.php:3349
+msgid "Your Email"
+msgstr ""
+
+#: inc/classes/class-base.php:4177 inc/metabox.php:983 inc/metabox.php:3062
+#: inc/metabox.php:3360
+msgid "Show Socials?"
+msgstr ""
+
+#: inc/classes/class-base.php:4192 inc/metabox.php:3081
+msgid "Enable Contact Form?"
+msgstr ""
+
+#: inc/classes/class-base.php:4198 inc/metabox.php:3096
+msgid "Write Me Some"
+msgstr ""
+
+#: inc/classes/class-base.php:4199 inc/metabox.php:3094 inc/metabox.php:3097
+#: inc/metabox.php:3126
+msgid "Link Overhead"
+msgstr ""
+
+#: inc/classes/class-base.php:4204 inc/metabox.php:3109
+msgid "Message"
+msgstr ""
+
+#: inc/classes/class-base.php:4205 inc/metabox.php:3107 inc/metabox.php:3110
+#: inc/metabox.php:3139
+msgid "Link Title"
+msgstr ""
+
+#: inc/classes/class-base.php:4210 inc/metabox.php:3125
+msgid "Close And"
+msgstr ""
+
+#: inc/classes/class-base.php:4211
+msgid "Return Link Overhead"
+msgstr ""
+
+#: inc/classes/class-base.php:4217
+msgid "Return Link Title"
+msgstr ""
+
+#: inc/classes/class-base.php:4223 inc/metabox.php:875 inc/metabox.php:3152
+msgid "Contact Form Shortcode"
+msgstr ""
+
+#: inc/classes/class-base.php:4231
+msgid "Footer Settings"
+msgstr ""
+
+#: inc/classes/class-base.php:4237
+msgid "General"
+msgstr ""
+
+#: inc/classes/class-base.php:4243
+msgid "Footer Padding, PX"
+msgstr ""
+
+#: inc/classes/class-base.php:4294
+msgid "Copyright"
+msgstr ""
+
+#: inc/classes/class-base.php:4300
+msgid "Copyright Text"
+msgstr ""
+
+#: inc/classes/class-base.php:4307
+msgid "Copyright Position"
+msgstr ""
+
+#: inc/classes/class-base.php:4355
+msgid "Copyright Text Color"
+msgstr ""
+
+#: inc/classes/class-base.php:4364
+msgid "Copyright Link Color"
+msgstr ""
+
+#: inc/classes/class-base.php:4373
+msgid "Copyright Link Hover Color"
+msgstr ""
+
+#: inc/classes/class-base.php:4388
+msgid "Footer Menu Position"
+msgstr ""
+
+#: inc/classes/class-base.php:4391
+msgid "Before Copyright"
+msgstr ""
+
+#: inc/classes/class-base.php:4392
+msgid "After Copyright"
+msgstr ""
+
+#: inc/classes/class-base.php:4402
+msgid "High Menu Priority"
+msgstr ""
+
+#: inc/classes/class-base.php:4403
+msgid "The menu is placed before other items in the shared column if enabled."
+msgstr ""
+
+#: inc/classes/class-base.php:4413
+msgid "Fading Content on Hover"
+msgstr ""
+
+#: inc/classes/class-base.php:4432
+msgid "Show on Tablets"
+msgstr ""
+
+#: inc/classes/class-base.php:4433 inc/classes/class-base.php:4444
+msgid "Large menus on small screens can disrupt the visual design."
+msgstr ""
+
+#: inc/classes/class-base.php:4443
+msgid "Show on Mobile"
+msgstr ""
+
+#: inc/classes/class-base.php:4454
+msgid "Show on Maintenance"
+msgstr ""
+
+#: inc/classes/class-base.php:4455
+msgid "Show or hide the menu when the maintenance mode is enabled."
+msgstr ""
+
+#: inc/classes/class-base.php:4477
+msgid "Font: Uppercase"
+msgstr ""
+
+#: inc/classes/class-base.php:4484
+msgid "Font: Italic"
+msgstr ""
+
+#: inc/classes/class-base.php:4543
+msgid "Socials"
+msgstr ""
+
+#: inc/classes/class-base.php:4549
+msgid "Enable Social Icons?"
+msgstr ""
+
+#: inc/classes/class-base.php:4568
+msgid "Open in New Tab?"
+msgstr ""
+
+#: inc/classes/class-base.php:4578
+msgid "Socials Position"
+msgstr ""
+
+#: inc/classes/class-base.php:4593
+msgid "Socials Style"
+msgstr ""
+
+#: inc/classes/class-base.php:4596
+msgid "Icon"
+msgstr ""
+
+#: inc/classes/class-base.php:4607
+msgid "Icons Size, PX"
+msgstr ""
+
+#: inc/classes/class-base.php:4623
+msgid "Space Between Links, PX"
+msgstr ""
+
+#: inc/classes/class-base.php:4713
+msgid "Social Links"
+msgstr ""
+
+#: inc/classes/class-base.php:4722
+msgid "Facebook URL"
+msgstr ""
+
+#: inc/classes/class-base.php:4732
+msgid "Facebook Label"
+msgstr ""
+
+#: inc/classes/class-base.php:4755
+msgid "Twitter URL"
+msgstr ""
+
+#: inc/classes/class-base.php:4765
+msgid "Twitter Label"
+msgstr ""
+
+#: inc/classes/class-base.php:4788
+msgid "LinkedIn URL"
+msgstr ""
+
+#: inc/classes/class-base.php:4798
+msgid "LinkedIn Label"
+msgstr ""
+
+#: inc/classes/class-base.php:4821
+msgid "Instagram URL"
+msgstr ""
+
+#: inc/classes/class-base.php:4831
+msgid "Instagram Label"
+msgstr ""
+
+#: inc/classes/class-base.php:4854
+msgid "YouTube URL"
+msgstr ""
+
+#: inc/classes/class-base.php:4864
+msgid "YouTube Label"
+msgstr ""
+
+#: inc/classes/class-base.php:4887
+msgid "Pinterest URL"
+msgstr ""
+
+#: inc/classes/class-base.php:4897
+msgid "Pinterest Label"
+msgstr ""
+
+#: inc/classes/class-base.php:4920
+msgid "Tumblr URL"
+msgstr ""
+
+#: inc/classes/class-base.php:4930
+msgid "Tumblr Label"
+msgstr ""
+
+#: inc/classes/class-base.php:4953
+msgid "Flickr URL"
+msgstr ""
+
+#: inc/classes/class-base.php:4963
+msgid "Flickr Label"
+msgstr ""
+
+#: inc/classes/class-base.php:4986
+msgid "VK URL"
+msgstr ""
+
+#: inc/classes/class-base.php:4996
+msgid "VK Label"
+msgstr ""
+
+#: inc/classes/class-base.php:5019
+msgid "Dribble URL"
+msgstr ""
+
+#: inc/classes/class-base.php:5029
+msgid "Dribble Label"
+msgstr ""
+
+#: inc/classes/class-base.php:5052
+msgid "Vimeo URL"
+msgstr ""
+
+#: inc/classes/class-base.php:5062
+msgid "Vimeo Label"
+msgstr ""
+
+#: inc/classes/class-base.php:5085
+msgid "500px URL"
+msgstr ""
+
+#: inc/classes/class-base.php:5095
+msgid "500px Label"
+msgstr ""
+
+#: inc/classes/class-base.php:5118
+msgid "Xing URL"
+msgstr ""
+
+#: inc/classes/class-base.php:5128
+msgid "Xing Label"
+msgstr ""
+
+#: inc/classes/class-base.php:5151
+msgid "Patreon URL"
+msgstr ""
+
+#: inc/classes/class-base.php:5161
+msgid "Patreon Label"
+msgstr ""
+
+#: inc/classes/class-base.php:5184
+msgid "TikTok URL"
+msgstr ""
+
+#: inc/classes/class-base.php:5194
+msgid "TikTok Label"
+msgstr ""
+
+#: inc/classes/class-base.php:5206
+msgid "Ashade: Store General"
+msgstr ""
+
+#: inc/classes/class-base.php:5214
+msgid "Show Cart in Header"
+msgstr ""
+
+#: inc/classes/class-base.php:5230
+msgid "Show Sale Labels"
+msgstr ""
+
+#: inc/classes/class-base.php:5237
+msgid "Show Sold Out Labels"
+msgstr ""
+
+#: inc/classes/class-base.php:5253
+msgid "Cross-sells Columns"
+msgstr ""
+
+#: inc/classes/class-base.php:5256 inc/classes/class-base.php:5371
+#: inc/classes/class-base.php:5417
+msgid "1"
+msgstr ""
+
+#: inc/classes/class-base.php:5257 inc/classes/class-base.php:5372
+#: inc/classes/class-base.php:5418
+msgid "2"
+msgstr ""
+
+#: inc/classes/class-base.php:5258 inc/classes/class-base.php:5373
+#: inc/classes/class-base.php:5419
+msgid "3"
+msgstr ""
+
+#: inc/classes/class-base.php:5259 inc/classes/class-base.php:5374
+#: inc/classes/class-base.php:5420
+msgid "4"
+msgstr ""
+
+#: inc/classes/class-base.php:5269
+msgid "Ashade: Product Listing"
+msgstr ""
+
+#: inc/classes/class-base.php:5277
+msgid "Product Listing Sidebar"
+msgstr ""
+
+#: inc/classes/class-base.php:5298
+msgid "Buttons Type"
+msgstr ""
+
+#: inc/classes/class-base.php:5301
+msgid "Always Show"
+msgstr ""
+
+#: inc/classes/class-base.php:5302 inc/metabox.php:2507
+msgid "Show on Hover"
+msgstr ""
+
+#: inc/classes/class-base.php:5318
+msgid "Zoom Button"
+msgstr ""
+
+#: inc/classes/class-base.php:5325
+msgid "Add to Cart Button"
+msgstr ""
+
+#: inc/classes/class-base.php:5341
+msgid "Product Title Size"
+msgstr ""
+
+#: inc/classes/class-base.php:5353
+msgid "Ashade: Single Product"
+msgstr ""
+
+#: inc/classes/class-base.php:5361
+msgid "Product Gallery Lightbox"
+msgstr ""
+
+#: inc/classes/class-base.php:5368
+msgid "Product Gallery Columns"
+msgstr ""
+
+#: inc/classes/class-base.php:5390
+msgid "Product Navigation"
+msgstr ""
+
+#: inc/classes/class-base.php:5391
+msgid "Shows \"Return to Shop\" and \"Proceed to Cart\" buttons."
+msgstr ""
+
+#: inc/classes/class-base.php:5407
+msgid "Show Related Products"
+msgstr ""
+
+#: inc/classes/class-base.php:5414
+msgid "Related Products Columns"
+msgstr ""
+
+#: inc/classes/class-base.php:5432
+msgid "Get Default Error: Default value not specified for "
+msgstr ""
+
+#: inc/classes/class-base.php:5484
+msgid ""
+"Ashade Core Error: Attempt to add not a single section outside of Panel. "
+"Section ID is: "
+msgstr ""
+
+#: inc/classes/class-base.php:5505
+msgid "Ashade Core Error: Default value not specified for: "
+msgstr ""
+
+#: inc/classes/class-base.php:5524
+msgid ""
+"Ashade Core Error: Attempt to add option outside of Section. Option ID: "
+msgstr ""
+
+#: inc/classes/class-base.php:5875
+msgid "Thank you for choosing Ashade Theme"
+msgstr ""
+
+#: inc/classes/class-base.php:5876
+msgid ""
+"Here we have assembled some useful links to setup your website with our "
+"theme."
+msgstr ""
+
+#: inc/classes/class-base.php:5879
+msgid "Get Started"
+msgstr ""
+
+#: inc/classes/class-base.php:5881
+msgid "To import theme dummy content press the button below."
+msgstr ""
+
+#: inc/classes/class-base.php:5882
+msgid "Import Demo Content"
+msgstr ""
+
+#: inc/classes/class-base.php:5883
+msgid "You can always do that from"
+msgstr ""
+
+#: inc/classes/class-base.php:5883
+msgid "Appearance"
+msgstr ""
+
+#: inc/classes/class-base.php:5883
+msgid "Import Demo Data"
+msgstr ""
+
+#: inc/classes/class-base.php:5885
+msgid ""
+"To import theme dummy content you need to install and activate \"One Click "
+"Demo Import\" plugin."
+msgstr ""
+
+#: inc/classes/class-base.php:5886 inc/tgm/class-tgm-plugin-activation.php:334
+#: inc/tgm/tgm-plugin-register.php:132
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/classes/class-base.php:5890
+msgid "Theme Settings"
+msgstr ""
+
+#: inc/classes/class-base.php:5891
+msgid "All theme settings are available in Customizer."
+msgstr ""
+
+#: inc/classes/class-base.php:5892
+msgid "Customize Theme Settings"
+msgstr ""
+
+#: inc/classes/class-base.php:5893
+msgid ""
+"To reset Theme Settings press the button below. But notice: this action is "
+"irreversible. Also will clean Main Menu option, so you will need to choose "
+"Main Menu once again."
+msgstr ""
+
+#: inc/classes/class-base.php:5894
+msgid "Are you sure? This action is irreversible."
+msgstr ""
+
+#: inc/classes/class-base.php:5894
+msgid "Reset Theme Settings"
+msgstr ""
+
+#: inc/classes/class-base.php:5898
+msgid "Customer Help"
+msgstr ""
+
+#: inc/classes/class-base.php:5899
+msgid ""
+"Read our documentation. It will help you and will answer many questions."
+msgstr ""
+
+#: inc/classes/class-base.php:5900
+msgid "Theme Documentation"
+msgstr ""
+
+#: inc/classes/class-base.php:5902
+msgid "Still got any questions or find some issues? Please, let us know!"
+msgstr ""
+
+#: inc/classes/class-base.php:5903
+msgid "Customers Support"
+msgstr ""
+
+#: inc/classes/class-base.php:6180
+msgid "Footer Menu is not selected. Please create and select menu in "
+msgstr ""
+
+#: inc/classes/class-base.php:6180 template-parts/header-part.php:62
+#: template-parts/header-part.php:79
+msgid "Appearance -> Menus"
+msgstr ""
+
+#: inc/metabox.php:18 page-albums.php:121 page-home.php:199
+#: single-ashade-clients.php:138
+msgid "All"
+msgstr ""
+
+#: inc/metabox.php:25
+msgid "You have no categories yet."
+msgstr ""
+
+#: inc/metabox.php:38 inc/metabox.php:40 inc/metabox.php:2248
+#: inc/metabox.php:2250
+msgid "Page Overhead"
+msgstr ""
+
+#: inc/metabox.php:45 inc/metabox.php:174 inc/metabox.php:1391
+#: inc/metabox.php:2093 inc/metabox.php:2572 inc/metabox.php:2685
+#: inc/metabox.php:2900
+msgid "Spotlight State"
+msgstr ""
+
+#: inc/metabox.php:49 inc/metabox.php:63 inc/metabox.php:74 inc/metabox.php:85
+#: inc/metabox.php:110 inc/metabox.php:121 inc/metabox.php:150
+#: inc/metabox.php:178 inc/metabox.php:458 inc/metabox.php:753
+#: inc/metabox.php:893 inc/metabox.php:1110 inc/metabox.php:1342
+#: inc/metabox.php:1395 inc/metabox.php:1406 inc/metabox.php:1417
+#: inc/metabox.php:1428 inc/metabox.php:1443 inc/metabox.php:1466
+#: inc/metabox.php:1798 inc/metabox.php:1831 inc/metabox.php:1909
+#: inc/metabox.php:1942 inc/metabox.php:2009 inc/metabox.php:2097
+#: inc/metabox.php:2111 inc/metabox.php:2122 inc/metabox.php:2133
+#: inc/metabox.php:2158 inc/metabox.php:2174 inc/metabox.php:2191
+#: inc/metabox.php:2209 inc/metabox.php:2220 inc/metabox.php:2231
+#: inc/metabox.php:2525 inc/metabox.php:2558 inc/metabox.php:2576
+#: inc/metabox.php:2590 inc/metabox.php:2601 inc/metabox.php:2612
+#: inc/metabox.php:2637 inc/metabox.php:2653 inc/metabox.php:2667
+#: inc/metabox.php:2689 inc/metabox.php:2703 inc/metabox.php:2714
+#: inc/metabox.php:2725 inc/metabox.php:2750 inc/metabox.php:2761
+#: inc/metabox.php:2789 inc/metabox.php:2800 inc/metabox.php:2811
+#: inc/metabox.php:2832 inc/metabox.php:2843 inc/metabox.php:2854
+#: inc/metabox.php:2865 inc/metabox.php:2876 inc/metabox.php:2904
+#: inc/metabox.php:2927 inc/metabox.php:2983 inc/metabox.php:3084
+#: inc/metabox.php:3180 inc/metabox.php:3245
+msgid "Yes"
+msgstr ""
+
+#: inc/metabox.php:50 inc/metabox.php:64 inc/metabox.php:75 inc/metabox.php:86
+#: inc/metabox.php:111 inc/metabox.php:122 inc/metabox.php:151
+#: inc/metabox.php:179 inc/metabox.php:459 inc/metabox.php:754
+#: inc/metabox.php:894 inc/metabox.php:1111 inc/metabox.php:1343
+#: inc/metabox.php:1396 inc/metabox.php:1407 inc/metabox.php:1418
+#: inc/metabox.php:1429 inc/metabox.php:1444 inc/metabox.php:1467
+#: inc/metabox.php:1799 inc/metabox.php:1832 inc/metabox.php:1910
+#: inc/metabox.php:1943 inc/metabox.php:2010 inc/metabox.php:2098
+#: inc/metabox.php:2112 inc/metabox.php:2123 inc/metabox.php:2134
+#: inc/metabox.php:2159 inc/metabox.php:2175 inc/metabox.php:2192
+#: inc/metabox.php:2210 inc/metabox.php:2221 inc/metabox.php:2232
+#: inc/metabox.php:2526 inc/metabox.php:2559 inc/metabox.php:2577
+#: inc/metabox.php:2591 inc/metabox.php:2602 inc/metabox.php:2613
+#: inc/metabox.php:2638 inc/metabox.php:2654 inc/metabox.php:2668
+#: inc/metabox.php:2690 inc/metabox.php:2704 inc/metabox.php:2715
+#: inc/metabox.php:2726 inc/metabox.php:2751 inc/metabox.php:2762
+#: inc/metabox.php:2790 inc/metabox.php:2801 inc/metabox.php:2812
+#: inc/metabox.php:2833 inc/metabox.php:2844 inc/metabox.php:2855
+#: inc/metabox.php:2866 inc/metabox.php:2877 inc/metabox.php:2905
+#: inc/metabox.php:2928 inc/metabox.php:2984 inc/metabox.php:3085
+#: inc/metabox.php:3181 inc/metabox.php:3246 inc/metabox.php:3265
+msgid "No"
+msgstr ""
+
+#: inc/metabox.php:160
+msgid "Home Template Settings"
+msgstr ""
+
+#: inc/metabox.php:184 inc/metabox.php:2287 inc/metabox.php:2946
+msgid "Background Opacity"
+msgstr ""
+
+#: inc/metabox.php:203
+msgid "Background Style"
+msgstr ""
+
+#: inc/metabox.php:206
+msgid "Static Image"
+msgstr ""
+
+#: inc/metabox.php:207 inc/metabox.php:1586
+msgid "Video"
+msgstr ""
+
+#: inc/metabox.php:208
+msgid "Photo Gallery"
+msgstr ""
+
+#: inc/metabox.php:214
+msgid "Select Poster Image"
+msgstr ""
+
+#: inc/metabox.php:229 inc/metabox.php:2273 inc/metabox.php:2937
+msgid "Select Background Image"
+msgstr ""
+
+#: inc/metabox.php:244 inc/metabox.php:1553 inc/metabox.php:2344
+msgid "Add Images"
+msgstr ""
+
+#: inc/metabox.php:259
+msgid "Images Order"
+msgstr ""
+
+#: inc/metabox.php:276 inc/metabox.php:1595
+msgid "Select Video"
+msgstr ""
+
+#: inc/metabox.php:291
+msgid "For Mobile Browsers"
+msgstr ""
+
+#: inc/metabox.php:295
+msgid "Show Video"
+msgstr ""
+
+#: inc/metabox.php:296
+msgid "Show Poster"
+msgstr ""
+
+#: inc/metabox.php:307
+msgid "Background Fit"
+msgstr ""
+
+#: inc/metabox.php:311 inc/metabox.php:1289 inc/metabox.php:2041
+msgid "Cover"
+msgstr ""
+
+#: inc/metabox.php:312 inc/metabox.php:1290 inc/metabox.php:2042
+msgid "Fit Always"
+msgstr ""
+
+#: inc/metabox.php:313 inc/metabox.php:1291 inc/metabox.php:2043
+msgid "Fit Vertical"
+msgstr ""
+
+#: inc/metabox.php:314 inc/metabox.php:1292 inc/metabox.php:2044
+msgid "Fit Horizontal"
+msgstr ""
+
+#: inc/metabox.php:324
+msgid "Slider Transition Speed, ms"
+msgstr ""
+
+#: inc/metabox.php:338
+msgid "Slider Delay, ms"
+msgstr ""
+
+#: inc/metabox.php:352
+msgid "Zoom Level, %"
+msgstr ""
+
+#: inc/metabox.php:371 inc/metabox.php:374
+msgid "Back Label Overhead"
+msgstr ""
+
+#: inc/metabox.php:379 inc/metabox.php:382
+msgid "Back Label Title"
+msgstr ""
+
+#: inc/metabox.php:381 template-parts/albums/ribbon.php:23
+#: template-parts/albums/slider.php:34 template-parts/back-to-top.php:19
+msgid "Back"
+msgstr ""
+
+#: inc/metabox.php:390
+msgid "Links Color"
+msgstr ""
+
+#: inc/metabox.php:395 inc/metabox.php:1848 inc/metabox.php:1879
+#: inc/metabox.php:1959 inc/metabox.php:2536 inc/metabox.php:3264
+msgid "Custom"
+msgstr ""
+
+#: inc/metabox.php:400
+msgid "Link Upper Part (Normal)"
+msgstr ""
+
+#: inc/metabox.php:411
+msgid "Link Main Part (Normal)"
+msgstr ""
+
+#: inc/metabox.php:422
+msgid "Link Upper Part (Hover)"
+msgstr ""
+
+#: inc/metabox.php:433
+msgid "Link Main Part (Hover)"
+msgstr ""
+
+#: inc/metabox.php:448
+msgid "Works Settings"
+msgstr ""
+
+#: inc/metabox.php:454
+msgid "Show Works on Home?"
+msgstr ""
+
+#: inc/metabox.php:460 inc/metabox.php:755
+msgid "Link to Other Page"
+msgstr ""
+
+#: inc/metabox.php:461 inc/metabox.php:494 inc/metabox.php:756
+#: inc/metabox.php:790
+msgid "Link to External Page"
+msgstr ""
+
+#: inc/metabox.php:466 inc/metabox.php:477 inc/metabox.php:762
+#: inc/metabox.php:773
+msgid "Select a Page"
+msgstr ""
+
+#: inc/metabox.php:496 inc/metabox.php:792
+msgid "https://example.com/"
+msgstr ""
+
+#: inc/metabox.php:506 inc/metabox.php:802
+msgid "Open link in new tab?"
+msgstr ""
+
+#: inc/metabox.php:519 inc/metabox.php:815
+msgid "Link Position"
+msgstr ""
+
+#: inc/metabox.php:540 inc/metabox.php:543
+msgid "Works Label Overhead"
+msgstr ""
+
+#: inc/metabox.php:542
+msgid "My Photo Portfolio"
+msgstr ""
+
+#: inc/metabox.php:553 inc/metabox.php:556
+msgid "Works Label Title"
+msgstr ""
+
+#: inc/metabox.php:555
+msgid "Explore Works"
+msgstr ""
+
+#: inc/metabox.php:566
+msgid "Works Intro  Description"
+msgstr ""
+
+#: inc/metabox.php:576 inc/metabox.php:1012
+msgid "Select Categories"
+msgstr ""
+
+#: inc/metabox.php:592 inc/metabox.php:1027
+msgid "Category Labels"
+msgstr ""
+
+#: inc/metabox.php:606
+msgid "Sort Works By"
+msgstr ""
+
+#: inc/metabox.php:610 inc/metabox.php:1045
+msgid "Date"
+msgstr ""
+
+#: inc/metabox.php:611 inc/metabox.php:1046
+msgid "Title"
+msgstr ""
+
+#: inc/metabox.php:623
+msgid "Works Order"
+msgstr ""
+
+#: inc/metabox.php:627 inc/metabox.php:1057
+msgid "Descending"
+msgstr ""
+
+#: inc/metabox.php:628 inc/metabox.php:1058
+msgid "Ascending"
+msgstr ""
+
+#: inc/metabox.php:642 inc/metabox.php:2356
+msgid "Gallery Style"
+msgstr ""
+
+#: inc/metabox.php:645 inc/metabox.php:1129 inc/metabox.php:1642
+#: inc/metabox.php:2361
+msgid "Grid"
+msgstr ""
+
+#: inc/metabox.php:646 inc/metabox.php:1130 inc/metabox.php:1643
+#: inc/metabox.php:2362
+msgid "Masonry"
+msgstr ""
+
+#: inc/metabox.php:647 inc/metabox.php:1131 inc/metabox.php:1644
+#: inc/metabox.php:2363
+msgid "Adjusted"
+msgstr ""
+
+#: inc/metabox.php:658 inc/metabox.php:1303
+msgid "Filter State"
+msgstr ""
+
+#: inc/metabox.php:674
+msgid "Columns Count"
+msgstr ""
+
+#: inc/metabox.php:744
+msgid "Contacts Settings"
+msgstr ""
+
+#: inc/metabox.php:750
+msgid "Show Contacts on Home?"
+msgstr ""
+
+#: inc/metabox.php:835 inc/metabox.php:838
+msgid "Contacts Label Overhead"
+msgstr ""
+
+#: inc/metabox.php:837
+msgid "How to find me"
+msgstr ""
+
+#: inc/metabox.php:848 inc/metabox.php:851
+msgid "Contacts Label Title"
+msgstr ""
+
+#: inc/metabox.php:850
+msgid "My Contacts"
+msgstr ""
+
+#: inc/metabox.php:861
+msgid "Contacts Intro  Description"
+msgstr ""
+
+#: inc/metabox.php:890 inc/metabox.php:2980
+msgid "Show Contact Info List?"
+msgstr ""
+
+#: inc/metabox.php:1007
+msgid "Listing Settings"
+msgstr ""
+
+#: inc/metabox.php:1041
+msgid "Sort Albums By"
+msgstr ""
+
+#: inc/metabox.php:1053
+msgid "Albums Order"
+msgstr ""
+
+#: inc/metabox.php:1067
+msgid "Albums Cover"
+msgstr ""
+
+#: inc/metabox.php:1071
+msgid "Use Featured Images"
+msgstr ""
+
+#: inc/metabox.php:1072
+msgid "Use Alternative (if specified)"
+msgstr ""
+
+#: inc/metabox.php:1078 inc/metabox.php:2323
+msgid "Intro  Description"
+msgstr ""
+
+#: inc/metabox.php:1089 inc/metabox.php:1518 inc/metabox.php:2329
+msgid "Intro Description Alignment"
+msgstr ""
+
+#: inc/metabox.php:1106
+msgid "Limit Intro Width"
+msgstr ""
+
+#: inc/metabox.php:1125
+msgid "Listing Type"
+msgstr ""
+
+#: inc/metabox.php:1132 inc/metabox.php:1646
+msgid "Ribbon"
+msgstr ""
+
+#: inc/metabox.php:1133 inc/metabox.php:1647
+msgid "Slider"
+msgstr ""
+
+#: inc/metabox.php:1144 inc/metabox.php:1712
+msgid "Boxed"
+msgstr ""
+
+#: inc/metabox.php:1145 inc/metabox.php:1713
+msgid "Fullwidth"
+msgstr ""
+
+#: inc/metabox.php:1211
+msgid "Ribbon Style"
+msgstr ""
+
+#: inc/metabox.php:1227
+msgid "Link Style"
+msgstr ""
+
+#: inc/metabox.php:1230
+msgid "Explore Link"
+msgstr ""
+
+#: inc/metabox.php:1231
+msgid "Entire Item"
+msgstr ""
+
+#: inc/metabox.php:1242
+msgid "Vertical Layout for Mobile"
+msgstr ""
+
+#: inc/metabox.php:1255
+msgid "Slider Style"
+msgstr ""
+
+#: inc/metabox.php:1286 inc/metabox.php:2038
+msgid "Content Fitting"
+msgstr ""
+
+#: inc/metabox.php:1319
+msgid "Grid Columns"
+msgstr ""
+
+#: inc/metabox.php:1339
+msgid "Customize Image Crop"
+msgstr ""
+
+#: inc/metabox.php:1354
+msgid "Image Width"
+msgstr ""
+
+#: inc/metabox.php:1369
+msgid "Image Height"
+msgstr ""
+
+#: inc/metabox.php:1385
+msgid "Layout Settings"
+msgstr ""
+
+#: inc/metabox.php:1438 inc/metabox.php:2922
+msgid "Page Title"
+msgstr ""
+
+#: inc/metabox.php:1476
+msgid "Album Settings"
+msgstr ""
+
+#: inc/metabox.php:1483
+msgid "Album Content"
+msgstr ""
+
+#: inc/metabox.php:1489 inc/metabox.php:2310
+msgid "Elementor Content Position"
+msgstr ""
+
+#: inc/metabox.php:1494 inc/metabox.php:2315
+msgid "At the Top"
+msgstr ""
+
+#: inc/metabox.php:1495 inc/metabox.php:2316
+msgid "After Intro"
+msgstr ""
+
+#: inc/metabox.php:1496 inc/metabox.php:2317
+msgid "After Gallery"
+msgstr ""
+
+#: inc/metabox.php:1507
+msgid "Intro Description"
+msgstr ""
+
+#: inc/metabox.php:1538
+msgid "Album Media Type"
+msgstr ""
+
+#: inc/metabox.php:1542
+msgid "Images Only"
+msgstr ""
+
+#: inc/metabox.php:1543
+msgid "Mixed and Embed"
+msgstr ""
+
+#: inc/metabox.php:1544
+msgid "Video Only"
+msgstr ""
+
+#: inc/metabox.php:1567
+msgid "Add Videos"
+msgstr ""
+
+#: inc/metabox.php:1582
+msgid "Add Media"
+msgstr ""
+
+#: inc/metabox.php:1587 inc/tgm/class-tgm-plugin-activation.php:2569
+msgid "Type"
+msgstr ""
+
+#: inc/metabox.php:1590
+msgid "Select"
+msgstr ""
+
+#: inc/metabox.php:1591
+msgid "Change"
+msgstr ""
+
+#: inc/metabox.php:1592
+msgid "Add New Item"
+msgstr ""
+
+#: inc/metabox.php:1593
+msgid "Remove"
+msgstr ""
+
+#: inc/metabox.php:1594
+msgid "Select Image"
+msgstr ""
+
+#: inc/metabox.php:1596
+msgid "Embed Video"
+msgstr ""
+
+#: inc/metabox.php:1597
+msgid "Selected Image"
+msgstr ""
+
+#: inc/metabox.php:1598
+msgid "Selected Video"
+msgstr ""
+
+#: inc/metabox.php:1599
+msgid "or"
+msgstr ""
+
+#: inc/metabox.php:1600
+msgid "Insert YouTube or Vimeo video link url."
+msgstr ""
+
+#: inc/metabox.php:1601
+msgid "Insert"
+msgstr ""
+
+#: inc/metabox.php:1602
+msgid "Example:"
+msgstr ""
+
+#: inc/metabox.php:1603
+msgid "https://www.youtube.com/watch?v=m6ZY7gSXwYE"
+msgstr ""
+
+#: inc/metabox.php:1604
+msgid "https://vimeo.com/285444981"
+msgstr ""
+
+#: inc/metabox.php:1611
+msgid "+ Add Item"
+msgstr ""
+
+#: inc/metabox.php:1618
+msgid "Images Direction"
+msgstr ""
+
+#: inc/metabox.php:1637
+msgid "Album Style"
+msgstr ""
+
+#: inc/metabox.php:1645
+msgid "Bricks"
+msgstr ""
+
+#: inc/metabox.php:1648
+msgid "Justified"
+msgstr ""
+
+#: inc/metabox.php:1760 inc/metabox.php:1778
+msgid "Album Items Caption"
+msgstr ""
+
+#: inc/metabox.php:1844
+msgid "Row Height"
+msgstr ""
+
+#: inc/metabox.php:1875
+msgid "Item Spacing"
+msgstr ""
+
+#: inc/metabox.php:1889
+msgid "Set Item Spacing, PX"
+msgstr ""
+
+#: inc/metabox.php:1921
+msgid "Ribbon Layout"
+msgstr ""
+
+#: inc/metabox.php:1954
+msgid "Slider Opacity"
+msgstr ""
+
+#: inc/metabox.php:1969
+msgid "Set Slider Opacity"
+msgstr ""
+
+#: inc/metabox.php:1990
+msgid "Slider Overlay"
+msgstr ""
+
+#: inc/metabox.php:2055
+msgid "Show Mute/Unmute Video Button"
+msgstr ""
+
+#: inc/metabox.php:2056
+msgid "This option is actual only for the video files from the Media Library."
+msgstr ""
+
+#: inc/metabox.php:2075
+msgid ""
+"This image is used for album listing if \"Alternative Cover\" is chosen. Is "
+"useful to add album cover in the different orientation, than featured image."
+msgstr ""
+
+#: inc/metabox.php:2076
+msgid "Select Alternate Cover"
+msgstr ""
+
+#: inc/metabox.php:2087 inc/metabox.php:2566
+msgid "Page Layout"
+msgstr ""
+
+#: inc/metabox.php:2154 inc/metabox.php:2170 inc/metabox.php:2746
+msgid "Show Album Title"
+msgstr ""
+
+#: inc/metabox.php:2255
+msgid "Client Photo Gallery"
+msgstr ""
+
+#: inc/metabox.php:2261
+msgid "Page Background"
+msgstr ""
+
+#: inc/metabox.php:2266 inc/metabox.php:3191
+msgid "Use Featured Image"
+msgstr ""
+
+#: inc/metabox.php:2267
+msgid "Use Custom Image"
+msgstr ""
+
+#: inc/metabox.php:2405
+msgid "Gallery Items Caption"
+msgstr ""
+
+#: inc/metabox.php:2441
+msgid "Buttons and Filter"
+msgstr ""
+
+#: inc/metabox.php:2447
+msgid "Show Filter?"
+msgstr ""
+
+#: inc/metabox.php:2458
+msgid "Show Images Count (in filter)"
+msgstr ""
+
+#: inc/metabox.php:2502
+msgid "Buttons State?"
+msgstr ""
+
+#: inc/metabox.php:2506
+msgid "Always Shown"
+msgstr ""
+
+#: inc/metabox.php:2514
+msgid "Notification Settings"
+msgstr ""
+
+#: inc/metabox.php:2520
+msgid "Show Notify Button?"
+msgstr ""
+
+#: inc/metabox.php:2532
+msgid "Use Default Email?"
+msgstr ""
+
+#: inc/metabox.php:2544
+msgid "email@example.com"
+msgstr ""
+
+#: inc/metabox.php:2554
+msgid "Include Images Links?"
+msgstr ""
+
+#: inc/metabox.php:2677
+msgid "Post Settings"
+msgstr ""
+
+#: inc/metabox.php:2886 inc/metabox.php:3167
+msgid "Maintenance Settings"
+msgstr ""
+
+#: inc/metabox.php:2894
+msgid "Content Settings"
+msgstr ""
+
+#: inc/metabox.php:2911
+msgid "Main Menu State"
+msgstr ""
+
+#: inc/metabox.php:2962
+msgid "Select Date"
+msgstr ""
+
+#: inc/metabox.php:3075
+msgid "Contact Form Settings"
+msgstr ""
+
+#: inc/metabox.php:3123
+msgid "Close Overhead"
+msgstr ""
+
+#: inc/metabox.php:3136
+msgid "Close Title"
+msgstr ""
+
+#: inc/metabox.php:3190
+msgid "Use Default"
+msgstr ""
+
+#: inc/metabox.php:3241
+msgid "Show Countdown Labels"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:333
+#: inc/tgm/tgm-plugin-register.php:131
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:336
+#: inc/tgm/tgm-plugin-register.php:133
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:338
+#: inc/tgm/tgm-plugin-register.php:134
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:339
+#: inc/tgm/tgm-plugin-register.php:135
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:391
+#: inc/tgm/tgm-plugin-register.php:181
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:392
+#: inc/tgm/class-tgm-plugin-activation.php:847
+#: inc/tgm/class-tgm-plugin-activation.php:2553
+#: inc/tgm/class-tgm-plugin-activation.php:3600
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:393
+#: inc/tgm/class-tgm-plugin-activation.php:3179
+#: inc/tgm/tgm-plugin-register.php:182
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:394
+#: inc/tgm/tgm-plugin-register.php:183
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:396
+#: inc/tgm/tgm-plugin-register.php:184
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:398
+#: inc/tgm/tgm-plugin-register.php:185
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:400
+#: inc/tgm/tgm-plugin-register.php:186
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:401
+#: inc/tgm/tgm-plugin-register.php:187
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:402
+#: inc/tgm/tgm-plugin-register.php:188
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:403
+#: inc/tgm/tgm-plugin-register.php:189
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:542
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:543
+msgid "Update Required"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:954
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:954
+#: inc/tgm/class-tgm-plugin-activation.php:957
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:957
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2002
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2293
+msgid "Required"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2296
+msgid "Recommended"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2312
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2315
+msgid "External Source"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2318
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2335
+msgid "Not Installed"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2339
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2341
+msgid "Active"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2347
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2350
+msgid "Requires Update"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2353
+msgid "Update recommended"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2510
+msgid "Installed version:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2518
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2530
+msgid "Available version:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2553
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2567
+msgid "Plugin"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2568
+msgid "Source"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2573
+msgid "Version"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2574
+msgid "Status"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2623
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2628
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2634
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2704
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2737
+msgid "Install"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2743
+msgid "Update"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2746
+msgid "Activate"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2777
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2779
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2820
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2822
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2928
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2954
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3178
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3518
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3521
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3523
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3527
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3529
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3529
+#: inc/tgm/class-tgm-plugin-activation.php:3537
+msgid "Show Details"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3529
+#: inc/tgm/class-tgm-plugin-activation.php:3537
+msgid "Hide Details"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3530
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3532
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3535
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3537
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3538
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3540
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgm/tgm-plugin-register.php:62
+msgid "Shadow Core (for Shadow Themes)"
+msgstr ""
+
+#: inc/tgm/tgm-plugin-register.php:71
+msgid "One Click Demo Import"
+msgstr ""
+
+#: inc/tgm/tgm-plugin-register.php:76
+msgid "Meta Box"
+msgstr ""
+
+#: inc/tgm/tgm-plugin-register.php:83
+msgid "Elementor Page Builder"
+msgstr ""
+
+#: inc/tgm/tgm-plugin-register.php:90
+msgid "Contact Form 7"
+msgstr ""
+
+#: inc/tgm/tgm-plugin-register.php:95
+msgid "Envato Market"
+msgstr ""
+
+#: inc/tgm/tgm-plugin-register.php:103
+msgid "WooCommerce"
+msgstr ""
+
+#: page-albums.php:107 page-home.php:185 single-ashade-clients.php:137
+msgid "Filter"
+msgstr ""
+
+#: page-albums.php:178 page-home.php:262 template-parts/albums-listing.php:21
+#: template-parts/page-title.php:78
+msgid "Uncategorized"
+msgstr ""
+
+#: page-albums.php:295 page-albums.php:318
+msgid "Explore"
+msgstr ""
+
+#: page-albums.php:317
+msgid "Click Here To"
+msgstr ""
+
+#: page-albums.php:378 template-parts/albums/slider.php:153
+msgid "Prev"
+msgstr ""
+
+#: page-albums.php:379 template-parts/albums/slider.php:154
+msgid "Next"
+msgstr ""
+
+#: page-home.php:299
+msgid "You do not have any albums. Create your first album to show here."
+msgstr ""
+
+#: page-maintenance.php:55 template-parts/maintenance.php:76
+msgid "Days"
+msgstr ""
+
+#: page-maintenance.php:55 template-parts/maintenance.php:76
+msgid "Hours"
+msgstr ""
+
+#: page-maintenance.php:55 template-parts/maintenance.php:76
+msgid "Minutes"
+msgstr ""
+
+#: page-maintenance.php:55 template-parts/maintenance.php:76
+msgid "Seconds"
+msgstr ""
+
+#: search.php:43
+msgid "There is nothing found according to your query "
+msgstr ""
+
+#: searchform.php:8
+msgid "Search the site..."
+msgstr ""
+
+#: single-ashade-clients.php:82
+msgid "Client Notification"
+msgstr ""
+
+#: single-ashade-clients.php:83
+msgid "has finished work with photos selection. Client page link is: "
+msgstr ""
+
+#: single-ashade-clients.php:86
+msgid "List of approved items:"
+msgstr ""
+
+#: single-ashade-clients.php:87
+msgid "Client does not approve any photo."
+msgstr ""
+
+#: single-ashade-clients.php:88
+msgid "Notification was sent."
+msgstr ""
+
+#: single-ashade-clients.php:89
+msgid "Error occurred. Notification was not sent."
+msgstr ""
+
+#: single-ashade-clients.php:139
+msgid "Accepted"
+msgstr ""
+
+#: single-ashade-clients.php:140
+msgid "Rejected"
+msgstr ""
+
+#: single-ashade-clients.php:141
+msgid "Unverified"
+msgstr ""
+
+#: single-ashade-clients.php:284
+msgid "Notify Photographer"
+msgstr ""
+
+#: single.php:71
+msgid "Previous Post"
+msgstr ""
+
+#: single.php:83
+msgid "Next Post"
+msgstr ""
+
+#: template-parts/albums/next-post.php:13
+#: template-parts/albums/next-post.php:26
+msgid "Next Album"
+msgstr ""
+
+#: template-parts/aside.php:11
+msgid "Close Sidebar"
+msgstr ""
+
+#: template-parts/back-to-top-mobile.php:13 template-parts/back-to-top.php:11
+msgid "Back to"
+msgstr ""
+
+#: template-parts/elements/post-listing.php:69
+#: template-parts/post-listing.php:78
+msgid "in"
+msgstr ""
+
+#: template-parts/elements/post-listing.php:78
+#: template-parts/post-listing.php:83
+msgid "by"
+msgstr ""
+
+#: template-parts/elements/post-listing.php:105
+#: template-parts/post-listing.php:108
+msgid "Tagged in "
+msgstr ""
+
+#: template-parts/elements/post-listing.php:111
+#: template-parts/post-listing.php:114 template-parts/search.php:35
+msgid "Learn More"
+msgstr ""
+
+#: template-parts/header-part.php:62
+msgid "Menu not found. Please create and select menu in "
+msgstr ""
+
+#: template-parts/header-part.php:79
+msgid "Alternative Mobile Menu not found. Please create and select menu in "
+msgstr ""
+
+#: template-parts/page-title.php:40
+msgid "Looking for "
+msgstr ""
+
+#: template-parts/page-title.php:41
+msgid "Search Results"
+msgstr ""
+
+#: template-parts/page-title.php:56
+msgid "SKU:"
+msgstr ""
+
+#: template-parts/page-title.php:56
+#: woocommerce/order/order-details-customer.php:23
+#: woocommerce/order/order-details-customer.php:41
+msgid "N/A"
+msgstr ""
+
+#: template-parts/page-title.php:144
+msgid "Close (Esc)"
+msgstr ""
+
+#: template-parts/page-title.php:211
+msgid "Explore My Products"
+msgstr ""
+
+#: template-parts/page-title.php:217
+msgid "Tagged in"
+msgstr ""
+
+#: template-parts/page-title.php:223
+msgid "Posts by Tag"
+msgstr ""
+
+#: template-parts/page-title.php:225
+msgid "Posts by Author"
+msgstr ""
+
+#: template-parts/page-title.php:227
+msgid "Posted in Year"
+msgstr ""
+
+#: template-parts/page-title.php:229
+msgid "Posted in Month"
+msgstr ""
+
+#: template-parts/page-title.php:231
+msgid "Posted in Day"
+msgstr ""
+
+#: template-parts/page-title.php:233
+msgid "Archives"
+msgstr ""
+
+#: template-parts/page-ui.php:23
+msgid "Close"
+msgstr ""
+
+#: template-parts/page-ui.php:24
+msgid "Zoom"
+msgstr ""
+
+#: template-parts/protected.php:29
+msgid "This content is password protected"
+msgstr ""
+
+#: template-parts/protected.php:34
+msgid "Continue"
+msgstr ""
+
+#: template-parts/protected.php:34
+msgid "Enter Password"
+msgstr ""
+
+#: template-parts/protected.php:37
+msgid ""
+"Content of this page is protected by password. To get access for this page "
+"please enter your password in the field below. Or you may return to a "
+"previous page if you are here by mistake."
+msgstr ""
+
+#: template-parts/protected.php:48
+msgid "Go Back"
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:35
+msgid "Shipping costs are calculated during checkout."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:37
+msgid "Enter your address to view shipping options."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:40
+msgid ""
+"There are no shipping options available. Please ensure that your address has "
+"been entered correctly, or contact us if you need any help."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:43
+#, php-format
+msgid "No shipping options were found for %s."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:44
+msgid "Enter a different address"
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:54
+msgid "Shipping to:"
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:56
+msgid "Change address"
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:58
+msgid "Shipping options will be updated during checkout."
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:15
+msgid "Shopping Summary"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:16
+msgid "Cart Totals"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:21
+msgid "Subtotal:"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:37
+msgid "Shipping:"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:54
+#, php-format
+msgid "(estimated for %s)"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:76 woocommerce/checkout/thankyou.php:57
+msgid "Total:"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:83 woocommerce/cart/cart-totals.php:84
+msgid "Update cart"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:95
+msgid "Checkout"
+msgstr ""
+
+#: woocommerce/cart/cart.php:56
+msgid "Available on backorder"
+msgstr ""
+
+#: woocommerce/cart/cart.php:109 woocommerce/cart/mini-cart.php:56
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/cart/cart.php:129
+msgid "Continue Shopping"
+msgstr ""
+
+#: woocommerce/cart/cart.php:136 woocommerce/checkout/form-coupon.php:24
+msgid "Coupon code"
+msgstr ""
+
+#: woocommerce/cart/cart.php:137
+msgid "Enter your code"
+msgstr ""
+
+#: woocommerce/cart/cart.php:140
+msgid "Apply Coupon"
+msgstr ""
+
+#: woocommerce/cart/cross-sells.php:15
+msgid "You may be interested in"
+msgstr ""
+
+#: woocommerce/cart/cross-sells.php:16
+#: woocommerce/single-product/related.php:14
+msgid "Related Products"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:94
+msgid "No products in the cart."
+msgstr ""
+
+#: woocommerce/checkout/form-billing.php:14
+msgid "Billing &amp; Shipping"
+msgstr ""
+
+#: woocommerce/checkout/form-billing.php:19
+msgid "Billing details"
+msgstr ""
+
+#: woocommerce/checkout/form-billing.php:44
+msgid "Create an account?"
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:13
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:34
+msgid "Your order"
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:15
+msgid "Have a coupon?"
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:15
+msgid "Click here to enter your code"
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:20
+msgid "If you have a coupon code, please apply it below."
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:27
+msgid "Apply coupon"
+msgstr ""
+
+#: woocommerce/checkout/form-shipping.php:15
+msgid "Ship to a different address?"
+msgstr ""
+
+#: woocommerce/checkout/form-shipping.php:46
+msgid "Additional information"
+msgstr ""
+
+#: woocommerce/checkout/payment.php:14
+msgid "Payment Method"
+msgstr ""
+
+#: woocommerce/checkout/payment.php:24
+msgid ""
+"Sorry, it seems that there are no available payment methods for your state. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:24
+msgid "Please fill in your details above to see available payment methods."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:33
+#, php-format
+msgid ""
+"Since your browser does not support JavaScript, or it is disabled, please "
+"ensure you click the %1$sUpdate Totals%2$s button before placing your order. "
+"You may be charged more than the amount stated above if you fail to do so."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:35
+msgid "Update totals"
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:38
+msgid "Subtotal"
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:85
+#: woocommerce/order/order-details.php:41
+msgid "Total"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:18
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction. Please attempt your purchase again."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:21
+msgid "Pay"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:23
+msgid "My account"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:31
+msgid "Your order has been received."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:32
+msgid "Thank you."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:37
+msgid "Order number:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:43
+msgid "Date:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:50
+msgid "Email:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:64
+msgid "Payment method:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:80
+msgid "Thank you. Your order has been received."
+msgstr ""
+
+#: woocommerce/content-product.php:27 woocommerce/content-single-product.php:21
+msgid "Sold"
+msgstr ""
+
+#: woocommerce/content-product.php:37
+msgid "Item Added"
+msgstr ""
+
+#: woocommerce/content-product.php:38
+msgid "View Cart"
+msgstr ""
+
+#: woocommerce/content-product_cat.php:22
+msgid "Products"
+msgstr ""
+
+#: woocommerce/content-single-product.php:77
+msgid "Return to"
+msgstr ""
+
+#: woocommerce/content-single-product.php:78
+msgid "Product Listing"
+msgstr ""
+
+#: woocommerce/content-single-product.php:87
+msgid "Proceed To"
+msgstr ""
+
+#: woocommerce/content-single-product.php:88
+msgid "Shopping Cart"
+msgstr ""
+
+#: woocommerce/global/form-login.php:20
+#: woocommerce/myaccount/form-lost-password.php:17
+msgid "Username or email"
+msgstr ""
+
+#: woocommerce/global/form-login.php:22 woocommerce/myaccount/form-login.php:31
+#: woocommerce/myaccount/form-login.php:77
+msgid "Password"
+msgstr ""
+
+#: woocommerce/global/form-login.php:31
+msgid "Login"
+msgstr ""
+
+#: woocommerce/global/form-login.php:33 woocommerce/myaccount/form-login.php:42
+msgid "Remember me"
+msgstr ""
+
+#: woocommerce/global/form-login.php:39 woocommerce/myaccount/form-login.php:47
+msgid "Lost your password?"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:14
+msgid "Welcome!"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:15
+#: woocommerce/myaccount/form-login.php:50
+msgid "Sign In"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:18
+msgid "New Customer?"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:19
+#: woocommerce/myaccount/form-login.php:91
+msgid "Register"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:27
+msgid "Username or email address"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:63
+msgid "Username"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:70
+msgid "Email address"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:83
+msgid "A password will be sent to your email address."
+msgstr ""
+
+#: woocommerce/myaccount/form-lost-password.php:13
+msgid ""
+"Lost your password? Please enter your username or email address. You will "
+"receive a link to create a new password via email."
+msgstr ""
+
+#: woocommerce/myaccount/form-lost-password.php:25
+msgid "Reset password"
+msgstr ""
+
+#: woocommerce/myaccount/form-reset-password.php:14
+msgid "Enter a new password below."
+msgstr ""
+
+#: woocommerce/myaccount/form-reset-password.php:17
+msgid "New password"
+msgstr ""
+
+#: woocommerce/myaccount/form-reset-password.php:21
+msgid "Re-enter new password"
+msgstr ""
+
+#: woocommerce/myaccount/form-reset-password.php:34
+msgid "Save"
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:15
+#: woocommerce/myaccount/my-address.php:24
+#: woocommerce/order/order-details-customer.php:20
+msgid "Billing address"
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:16
+#: woocommerce/order/order-details-customer.php:39
+msgid "Shipping address"
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:35
+msgid "The following addresses will be used on the checkout page by default."
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:52
+msgid "Edit Address"
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:52
+msgid "Add Address"
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:58
+msgid "You have not set up this type of address yet."
+msgstr ""
+
+#: woocommerce/order/order-details.php:34
+msgid "Order details"
+msgstr ""
+
+#: woocommerce/order/order-details.php:82
+msgid "Note:"
+msgstr ""
+
+#: woocommerce/order/order-downloads.php:11
+msgid "Downloads"
+msgstr ""
+
+#: woocommerce/order/order-downloads.php:43
+msgid "&infin;"
+msgstr ""
+
+#: woocommerce/order/order-downloads.php:49
+msgid "Never"
+msgstr ""
+
+#: woocommerce/product-searchform.php:12
+msgid "Search products&hellip;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:33
+msgid "What people say"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:40
+msgid "Reviews"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:75
+msgid "Write Your Review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:75
+#, php-format
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:77
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:79
+#, php-format
+msgid "Leave a Review about \"%s\""
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:82
+msgid "Submit a Review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:90
+msgid "Name"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:96
+msgid "Email"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:121
+#, php-format
+msgid "You must be %1$slogged in%2$s to post a review."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:125
+msgid "Your rating"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:126
+msgid "Rate&hellip;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:127
+msgid "Perfect"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:128
+msgid "Good"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:129
+msgid "Average"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:130
+msgid "Not that bad"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:131
+msgid "Very poor"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:135
+msgid "Your review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:142
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/variable.php:20
+msgid "This product is currently out of stock and unavailable."
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/variable.php:34
+msgid "Clear"
+msgstr ""
+
+#: woocommerce/single-product/product-image.php:63
+msgid "Awaiting product image"
+msgstr ""
+
+#: woocommerce/single-product/related.php:19
+msgid "You may also like"
+msgstr ""
+
+#: woocommerce/single-product/tabs/additional-information.php:11
+msgid "Additional info"
+msgstr ""
+
+#: woocommerce/single-product/tabs/additional-information.php:17
+msgid "Want to learn more?"
+msgstr ""
+
+#: woocommerce/single-product/tabs/description.php:17
+msgid "Detailed Information"
+msgstr ""
+
+#: woocommerce/single-product/up-sells.php:13
+msgid "People who bought it"
+msgstr ""
+
+#: woocommerce/single-product/up-sells.php:14
+msgid "Also Buying"
+msgstr ""

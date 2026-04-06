@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: home-services
+    runtime: docker
+    plan: starter
+    envVars:
+      - key: WORDPRESS_DB_HOST
+        sync: false
+      - key: WORDPRESS_DB_USER
+        sync: false
+      - key: WORDPRESS_DB_PASSWORD
+        sync: false
+      - key: WORDPRESS_DB_NAME
+        sync: false

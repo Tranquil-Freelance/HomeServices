@@ -1,0 +1,248 @@
+/** 
+ * Author: Shadow Themes
+ * Author URL: http://shadow-themes.com
+ */
+
+/* Some Fixes */
+.rwmb-meta-box,
+#taxonomy-albums-category {
+	width: 100%;
+}
+
+#postimagediv .inside {
+	flex-direction: column;
+}
+.inside #submitpost {
+	width: 100%;
+}
+.ashade-hide-tgmpa-nag #setting-error-tgmpa {
+	display: none!important;
+}
+/* Footer Text */
+.ashade_rate_us {
+    width: 80px;
+    height: 16px;
+    background: url(../../img/admin/5stars.png) no-repeat 0 0;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 3px;
+    transform: translateY(1px);
+}
+
+/* Settings Page */
+.appearance_page_ashade_settings {
+	padding: 20px 0 0 0;
+}
+.appearance_page_ashade_settings .notice, 
+.appearance_page_ashade_settings div.error, 
+.appearance_page_ashade_settings div.updated {
+	margin: 0 20px 20px 0;
+}
+.ashade-theme-settings-wrap {
+	position: relative;
+    overflow: hidden;
+    margin: 16px 20px 16px 0;
+    padding: 23px 23px 23px;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    background: #fff;
+    font-size: 13px;
+    line-height: 1.7;
+	box-sizing: border-box;
+}
+.ashade-theme-settings-row {
+	display: flex;
+	margin: 0 -30px;
+	flex-direction: row;
+	padding: 20px 0 10px 0;
+}
+.ashade-theme-settings-col {
+	margin: 0 30px;
+	position: relative;
+	width: calc(33.33% - 60px);
+}
+.ashade-theme-settings-wrap h2 {
+	margin: 0;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.ashade-theme-settings-col h3 {
+	margin: 0 0 20px 0;
+	font-size: 16px;
+	line-height: 22px;
+}
+.ashade-theme-settings-col:first-child:before {
+	display: none;
+}
+.ashade-theme-settings-col:before {
+	content: '';
+	height: 100%;
+	width: 1px;
+	background: #eef0f4;
+	position: absolute;
+	left: -30px;
+	top: 0;
+}
+.ashade-admin-button {
+    background: #0085ba;
+    border-color: #0073aa #006799 #006799;
+    box-shadow: 0 1px 0 #006799;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 2px;
+    height: 43px;
+    font-size: 13px;
+    line-height: 1;
+    padding: 13px 30px 0 30px;
+    margin: 0 0 20px 0;
+	transition: all 0.3s;
+}
+.ashade-admin-button:last-child {
+	margin: 0;
+}
+.ashade-admin-button:hover {
+    background: #008ec2;
+    border-color: #006799;
+    color: #ffffff;
+}
+.ashade-admin-button.ashade-reset-button {
+    background: #ba4040;
+    border-color: #aa4040 #992020 #992020;
+    box-shadow: 0 1px 0 #992020;
+    text-shadow: 0 -1px 1px #992020, 1px 0 1px #992020, 0 1px 1px #992020, -1px 0 1px #992020;
+    color: #ffffff;
+}
+.ashade-admin-button.ashade-reset-button:hover {
+    background: #c24040;
+    border-color: #992020;
+    color: #ffffff;
+}
+.ashade-button-subtext {
+	margin: -5px 0 0 0;
+}
+
+#ashade-client-post-settings .inside,
+#ashade-album-post-settings .inside {
+	padding: 15px 20px 20px 20px;
+}
+
+/* Subtitle Field Styles */
+.template--page-home .edit-post-visual-editor .editor-post-title.has-overhead:before,
+.template--page-home input.ashade-subtitle-field {
+	display: none;
+}
+.edit-post-visual-editor .editor-post-title.has-overhead {
+	position: relative;
+}
+.edit-post-visual-editor .editor-post-title.has-overhead:before {
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: #e2e4e7;
+	position: absolute;
+	left: 0;
+	top: 43px;
+	opacity: 0.5;
+}
+.edit-post-visual-editor .editor-post-title.has-overhead textarea {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.edit-post-visual-editor__post-title-wrapper input[type="text"].ashade-subtitle-field,
+.edit-post-visual-editor input[type="text"].ashade-subtitle-field {
+	font-size: 16px;
+	line-height: 28px;
+	transition: box-shadow 0.3s, border 0.3s;
+	padding: 5px 14px 5px 14px;
+	box-shadow: -3px 0 0 0 rgba(145,151,162,0);
+	border-radius: 0!important;
+	border-width: 1px 1px 1px 0px;
+	border-style: solid;
+	border-color: rgba(66,88,99,0);
+	outline: none!important;
+}
+.edit-post-visual-editor__post-title-wrapper input[type="text"].ashade-subtitle-field {
+	max-width: 840px;
+	width: 100%;
+	margin: 0 auto -24px auto;
+	display: block;
+	border-bottom: 1px solid #8c8f9430;
+}
+.edit-post-visual-editor__post-title-wrapper input[type="text"].ashade-subtitle-field:focus,
+.edit-post-visual-editor input[type="text"].ashade-subtitle-field:focus {
+	box-shadow: -3px 0 0 0 #555d66;
+	border-color: rgba(66,88,99,0.4);
+}
+.edit-post-visual-editor__post-title-wrapper input[type="text"].ashade-subtitle-field:hover,
+.edit-post-visual-editor input[type="text"].ashade-subtitle-field:hover {
+	box-shadow: -3px 0 0 0 rgba(145,151,162,0.25);
+}
+input.ashade-subtitle-field.is-default-editor {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+/* Disable Elementor Button for Albums */
+body.elementor-editor-active.post-type-ashade-albums div#elementor-editor,
+body.post-type-ashade-albums div#elementor-switch-mode {
+	display: block;
+	transition: transform 0.3s, opacity 0.3s, margin 0.3s;
+	transform-origin: 50% 0;
+	pointer-events: auto;
+}
+body.elementor-editor-active.post-type-ashade-albums.is-ribbon div#elementor-editor,
+body.elementor-editor-active.post-type-ashade-albums.is-slider div#elementor-editor,
+body.post-type-ashade-albums.is-ribbon div#elementor-switch-mode,
+body.post-type-ashade-albums.is-slider div#elementor-switch-mode {
+	pointer-events: none;
+	opacity: 0;
+	transform: scaleY(0);
+	margin-bottom: -46px;
+}
+body.elementor-editor-active.post-type-ashade-albums.is-ribbon div#elementor-editor,
+body.elementor-editor-active.post-type-ashade-albums.is-slider div#elementor-editor {
+	margin-bottom: -300px;
+}
+
+/* Disable meta boxes for not match templates */
+body:not(.template--page-home) #ashade-home-template-settings,
+body:not(.template--page-albums) #ashade-albums-template-settings,
+body:not(.template--page-maintenance) #ashade-maintenance-template-settings {
+	display: none!important;
+}
+
+/* Always show meta boxes for match templates */
+body.template--page-home #ashade-home-template-settings,
+body.template--page-albums #ashade-albums-template-settings,
+body.template--page-maintenance #ashade-maintenance-template-settings {
+	display: block!important;
+}
+
+/* Remove Extra Meta Boxes for Templates */
+body.template--page-home #ashade-page-settings,
+body.template--page-maintenance #ashade-page-settings,
+body.template--page-albums #ashade-page-settings,
+body.template--page-home #commentsdiv,
+body.template--page-maintenance #commentsdiv,
+body.template--page-albums #commentsdiv,
+body.template--page-home #commentsdiv,
+body.template--page-maintenance #commentsdiv,
+body.template--page-albums #commentsdiv,
+body.template--page-home #commentstatusdiv,
+body.template--page-maintenance #commentstatusdiv,
+body.template--page-albums #commentstatusdiv,
+body.template--page-home #postcustom,
+body.template--page-maintenance #postcustom,
+body.template--page-albums #postcustom {
+	display: none;
+}
