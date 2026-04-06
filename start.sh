@@ -12,20 +12,19 @@ if [ ! -d "$DATADIR/mysql" ]; then
     mysql_install_db --user=mysql --datadir="$DATADIR"
 fi
 
-echo ">>> Starting MariaDB (skip-grant-tables for user setup)..."
-mysqld --datadir="$DATADIR" --user=mysql --skip-grant-tables --skip-networking &
-MYSQL_PID=$!
+echo ">>> Starting MariaDB..."
+mysqld --datadir="$DATADIR" --user=mysql --port=3306 --bind-address=0.0.0.0 --skip-grant-tables &
 
 for i in $(seq 1 30); do
     if mysql -u root -e "SELECT 1;" >/dev/null 2>&1; then
-        echo ">>> MariaDB accepting connections."
+        echo ">>> MariaDB is ready."
         break
     fi
     echo ">>> Waiting for MariaDB... ($i/30)"
     sleep 1
 done
 
-echo ">>> Resetting database and users..."
+echo ">>> Setting up database and users..."
 mysql -u root <<-EOSQL
     FLUSH PRIVILEGES;
     CREATE DATABASE IF NOT EXISTS wordpress;
@@ -41,24 +40,10 @@ mysql -u root <<-EOSQL
     GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpress'@'127.0.0.1';
     FLUSH PRIVILEGES;
 EOSQL
-echo ">>> Users created."
+echo ">>> Database ready."
 
-echo ">>> Stopping bootstrap MariaDB..."
-kill $MYSQL_PID
-wait $MYSQL_PID 2>/dev/null || true
-sleep 1
-
-echo ">>> Starting MariaDB (normal mode with TCP)..."
-mysqld --datadir="$DATADIR" --user=mysql --port=3306 --bind-address=0.0.0.0 &
-
-for i in $(seq 1 30); do
-    if mysql -u wordpress -pwordpress -h 127.0.0.1 -P 3306 -e "SELECT 1;" wordpress 2>/dev/null; then
-        echo ">>> DB connection verified!"
-        break
-    fi
-    echo ">>> Waiting for MariaDB TCP... ($i/30)"
-    sleep 1
-done
+echo ">>> Verifying connection..."
+mysql -u wordpress -pwordpress -h 127.0.0.1 -P 3306 wordpress -e "SELECT 'connection_ok';" 2>&1 || true
 
 PORT="${PORT:-10000}"
 sed -i "s/Listen 80/Listen ${PORT}/" /etc/apache2/ports.conf
