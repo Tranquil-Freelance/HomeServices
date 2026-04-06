@@ -13,7 +13,7 @@ COPY ashade-child/ /usr/src/wordpress/wp-content/themes/ashade-child/
 RUN chown -R www-data:www-data /usr/src/wordpress/wp-content/themes/ashade \
     /usr/src/wordpress/wp-content/themes/ashade-child
 
-ENV WORDPRESS_DB_HOST=localhost
+ENV WORDPRESS_DB_HOST=127.0.0.1
 ENV WORDPRESS_DB_USER=wordpress
 ENV WORDPRESS_DB_PASSWORD=wordpress
 ENV WORDPRESS_DB_NAME=wordpress

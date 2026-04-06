@@ -3,13 +3,16 @@ set -e
 
 DATADIR="/data/mysql"
 mkdir -p "$DATADIR"
+chown -R mysql:mysql "$DATADIR"
+mkdir -p /run/mysqld
+chown mysql:mysql /run/mysqld
 
 if [ ! -d "$DATADIR/mysql" ]; then
     echo ">>> Initializing MariaDB data directory..."
     mysql_install_db --user=mysql --datadir="$DATADIR"
 fi
 
-echo ">>> Starting MariaDB for initial setup..."
+echo ">>> Starting MariaDB for setup..."
 mysqld_safe --datadir="$DATADIR" --skip-grant-tables &
 
 for i in $(seq 1 30); do
@@ -21,12 +24,16 @@ for i in $(seq 1 30); do
     sleep 1
 done
 
-echo ">>> Creating WordPress database and user..."
+echo ">>> Ensuring WordPress database and user exist..."
 mysql -u root <<-EOSQL
     FLUSH PRIVILEGES;
     CREATE DATABASE IF NOT EXISTS wordpress;
-    CREATE USER IF NOT EXISTS 'wordpress'@'localhost' IDENTIFIED BY 'wordpress';
+    DROP USER IF EXISTS 'wordpress'@'localhost';
+    DROP USER IF EXISTS 'wordpress'@'127.0.0.1';
+    CREATE USER 'wordpress'@'localhost' IDENTIFIED BY 'wordpress';
+    CREATE USER 'wordpress'@'127.0.0.1' IDENTIFIED BY 'wordpress';
     GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpress'@'localhost';
+    GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpress'@'127.0.0.1';
     FLUSH PRIVILEGES;
 EOSQL
 
