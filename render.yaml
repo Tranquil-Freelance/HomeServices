@@ -1,21 +1,50 @@
+# WordPress cannot use Render Postgres without non-standard drivers. We use a private MySQL service.
 services:
+  - type: pserv
+    name: home-services-mysql
+    runtime: docker
+    repo: https://github.com/render-examples/mysql
+    branch: main
+    region: oregon
+    plan: starter
+    autoDeploy: false
+    disk:
+      name: mysql-data
+      mountPath: /var/lib/mysql
+      sizeGB: 10
+    envVars:
+      - key: MYSQL_DATABASE
+        value: wordpress
+      - key: MYSQL_USER
+        value: wordpress
+      - key: MYSQL_PASSWORD
+        generateValue: true
+      - key: MYSQL_ROOT_PASSWORD
+        generateValue: true
+
   - type: web
     name: home-services
     runtime: docker
-    # Starter (512MB) OOMs during demo import + MariaDB + Apache. Standard has more RAM.
-    plan: standard
+    # No MariaDB in-container; 512MB is usually enough for PHP + Apache + import.
+    plan: starter
     region: oregon
     autoDeploy: "yes"
     disk:
-      name: wordpress-data
-      mountPath: /data
-      sizeGB: 1
+      name: wordpress-uploads
+      mountPath: /var/www/html/wp-content/uploads
+      sizeGB: 5
     envVars:
       - key: WORDPRESS_DB_HOST
-        value: 127.0.0.1:3306
+        fromService:
+          name: home-services-mysql
+          type: pserv
+          property: hostport
       - key: WORDPRESS_DB_USER
         value: wordpress
       - key: WORDPRESS_DB_PASSWORD
-        value: wordpress
+        fromService:
+          name: home-services-mysql
+          type: pserv
+          envVarKey: MYSQL_PASSWORD
       - key: WORDPRESS_DB_NAME
         value: wordpress
