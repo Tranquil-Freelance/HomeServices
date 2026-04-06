@@ -34,11 +34,12 @@ services:
       mountPath: /var/www/html/wp-content/uploads
       sizeGB: 5
     envVars:
+      # Use `host` only — `hostport` is the HTTP probe port (10000), not MySQL (3306).
       - key: WORDPRESS_DB_HOST
         fromService:
           name: home-services-mysql
           type: pserv
-          property: hostport
+          property: host
       - key: WORDPRESS_DB_USER
         value: wordpress
       - key: WORDPRESS_DB_PASSWORD

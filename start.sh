@@ -1,6 +1,16 @@
 #!/bin/bash
 set -e
 
+# Render private MySQL exposes 3306; blueprint `hostport` wrongly used port 10000 (probe).
+if [[ -n "${WORDPRESS_DB_HOST:-}" ]]; then
+  case "$WORDPRESS_DB_HOST" in
+    *:10000) export WORDPRESS_DB_HOST="${WORDPRESS_DB_HOST%:10000}:3306" ;;
+    *:*)     ;;
+    *)       export WORDPRESS_DB_HOST="${WORDPRESS_DB_HOST}:3306" ;;
+  esac
+  echo ">>> WORDPRESS_DB_HOST=${WORDPRESS_DB_HOST}"
+fi
+
 echo ">>> Ensuring writable uploads directory..."
 mkdir -p /var/www/html/wp-content/uploads
 chown -R www-data:www-data /var/www/html/wp-content/uploads
