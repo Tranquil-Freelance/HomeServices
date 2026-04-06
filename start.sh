@@ -45,6 +45,13 @@ echo ">>> Database ready."
 echo ">>> Verifying connection..."
 mysql -u wordpress -pwordpress -h 127.0.0.1 -P 3306 wordpress -e "SELECT 'connection_ok';" 2>&1 || true
 
+echo ">>> Setting up uploads directory..."
+mkdir -p /var/www/html/wp-content/uploads
+chown -R www-data:www-data /var/www/html/wp-content/uploads
+chmod -R 755 /var/www/html/wp-content/uploads
+chown -R www-data:www-data /var/www/html/wp-content/plugins 2>/dev/null || true
+chown -R www-data:www-data /var/www/html/wp-content/themes 2>/dev/null || true
+
 PORT="${PORT:-10000}"
 sed -i "s/Listen 80/Listen ${PORT}/" /etc/apache2/ports.conf
 sed -i "s/:80/:${PORT}/" /etc/apache2/sites-available/000-default.conf
