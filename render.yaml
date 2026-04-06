@@ -3,12 +3,18 @@ services:
     name: home-services
     runtime: docker
     plan: starter
+    region: oregon
+    autoDeploy: "yes"
+    disk:
+      name: wordpress-data
+      mountPath: /data
+      sizeGB: 1
     envVars:
       - key: WORDPRESS_DB_HOST
-        sync: false
+        value: localhost
       - key: WORDPRESS_DB_USER
-        sync: false
+        value: wordpress
       - key: WORDPRESS_DB_PASSWORD
-        sync: false
+        value: wordpress
       - key: WORDPRESS_DB_NAME
-        sync: false
+        value: wordpress
