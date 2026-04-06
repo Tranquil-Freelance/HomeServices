@@ -2,7 +2,8 @@ services:
   - type: web
     name: home-services
     runtime: docker
-    plan: starter
+    # Starter (512MB) OOMs during demo import + MariaDB + Apache. Standard has more RAM.
+    plan: standard
     region: oregon
     autoDeploy: "yes"
     disk:
