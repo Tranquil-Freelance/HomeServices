@@ -7,6 +7,7 @@ RUN apt-get update && \
 COPY start.sh /usr/local/bin/start.sh
 RUN chmod +x /usr/local/bin/start.sh
 
+COPY mu-plugins/ /usr/src/wordpress/wp-content/mu-plugins/
 COPY ashade/ /usr/src/wordpress/wp-content/themes/ashade/
 COPY ashade-child/ /usr/src/wordpress/wp-content/themes/ashade-child/
 RUN chown -R www-data:www-data /usr/src/wordpress/wp-content/themes/ashade \
