@@ -4,6 +4,8 @@
  * Author URL: http://shadow-themes.com
  */
 
+require_once get_stylesheet_directory() . '/inc/site-setup.php';
+
 # Enqueue Styles and Scripts
 if ( ! function_exists( 'ashade_child_enqueue_styles' ) ) {
 	add_action( 'wp_enqueue_scripts', 'ashade_child_enqueue_styles' );
