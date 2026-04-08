@@ -12,6 +12,104 @@ if ( ! defined( 'ABSPATH' ) ) {
 define( 'ASHADE_CHILD_STARTER_VERSION', 4 );
 
 /**
+ * Render / CI: set ASHADE_CHILD_AUTO_SETUP=1 so the first front-end hit (after WP is installed)
+ * can run starter content + migrations without logging into wp-admin. Remove or set 0 after the site is correct.
+ *
+ * @return bool
+ */
+function ashade_child_auto_setup_env_enabled() {
+	$v = getenv( 'ASHADE_CHILD_AUTO_SETUP' );
+	if ( false === $v || '' === $v ) {
+		return false;
+	}
+	$v = strtolower( trim( (string) $v ) );
+	return in_array( $v, array( '1', 'true', 'yes', 'on' ), true );
+}
+
+/**
+ * Run starter migrations (v3 then v4) with lock; used by admin hooks and headless auto-setup.
+ */
+function ashade_child_run_starter_migrations_now() {
+	if ( get_transient( 'ashade_child_migrate_lock' ) ) {
+		return;
+	}
+	set_transient( 'ashade_child_migrate_lock', 1, 120 );
+	set_time_limit( 300 );
+	try {
+		$v = (int) get_option( 'ashade_child_starter_pack_version', 0 );
+		if ( $v < 3 ) {
+			ashade_child_run_starter_migration_v3();
+		}
+		$v = (int) get_option( 'ashade_child_starter_pack_version', 0 );
+		if ( $v < ASHADE_CHILD_STARTER_VERSION ) {
+			ashade_child_run_starter_migration_v4_contact_page();
+		}
+	} finally {
+		delete_transient( 'ashade_child_migrate_lock' );
+	}
+}
+
+/**
+ * Headless: first requests after deploy apply DB changes (menu, pages, home meta) without wp-admin.
+ */
+function ashade_child_headless_autosetup() {
+	if ( ! ashade_child_auto_setup_env_enabled() ) {
+		return;
+	}
+	if ( ! is_blog_installed() || is_admin() ) {
+		return;
+	}
+	if ( wp_doing_ajax() || wp_doing_cron() ) {
+		return;
+	}
+	if ( defined( 'REST_REQUEST' ) && REST_REQUEST ) {
+		return;
+	}
+	if ( get_transient( 'ashade_child_headless_lock' ) ) {
+		return;
+	}
+
+	$need_initial = ! get_option( 'ashade_child_services_site_built' );
+	$need_migrate = ! $need_initial && ( (int) get_option( 'ashade_child_starter_pack_version', 0 ) < ASHADE_CHILD_STARTER_VERSION );
+
+	if ( ! $need_initial && ! $need_migrate ) {
+		return;
+	}
+
+	set_transient( 'ashade_child_headless_lock', 1, 300 );
+	set_time_limit( 300 );
+	if ( function_exists( 'ignore_user_abort' ) ) {
+		ignore_user_abort( true );
+	}
+
+	$admin_ids = get_users(
+		array(
+			'role'   => 'administrator',
+			'number' => 1,
+			'fields' => array( 'ID' ),
+		)
+	);
+	if ( empty( $admin_ids ) ) {
+		delete_transient( 'ashade_child_headless_lock' );
+		return;
+	}
+
+	wp_set_current_user( (int) $admin_ids[0]->ID );
+
+	try {
+		if ( $need_initial ) {
+			ashade_child_run_services_site_setup();
+		} else {
+			ashade_child_run_starter_migrations_now();
+		}
+	} finally {
+		wp_set_current_user( 0 );
+		delete_transient( 'ashade_child_headless_lock' );
+	}
+}
+add_action( 'template_redirect', 'ashade_child_headless_autosetup', 0 );
+
+/**
  * @param mixed $item Meta Box image field entry (ID int or array with ID).
  * @return int Attachment ID or 0.
  */
@@ -493,23 +591,7 @@ function ashade_child_maybe_run_starter_migration() {
 	if ( ! current_user_can( 'manage_options' ) ) {
 		return;
 	}
-	if ( get_transient( 'ashade_child_migrate_lock' ) ) {
-		return;
-	}
-	set_transient( 'ashade_child_migrate_lock', 1, 60 );
-	set_time_limit( 300 );
-	try {
-		$v = (int) get_option( 'ashade_child_starter_pack_version', 0 );
-		if ( $v < 3 ) {
-			ashade_child_run_starter_migration_v3();
-		}
-		$v = (int) get_option( 'ashade_child_starter_pack_version', 0 );
-		if ( $v < ASHADE_CHILD_STARTER_VERSION ) {
-			ashade_child_run_starter_migration_v4_contact_page();
-		}
-	} finally {
-		delete_transient( 'ashade_child_migrate_lock' );
-	}
+	ashade_child_run_starter_migrations_now();
 }
 add_action( 'admin_init', 'ashade_child_maybe_run_starter_migration', 0 );
 add_action( 'template_redirect', 'ashade_child_maybe_run_starter_migration', 0 );
@@ -755,7 +837,17 @@ function ashade_child_build_about_page_html( $img_id = 0 ) {
 }
 
 function ashade_child_run_services_site_setup() {
-	$images = ashade_child_setup_image_urls();
+	if ( get_option( 'ashade_child_services_site_built' ) ) {
+		return;
+	}
+	if ( get_transient( 'ashade_child_setup_running' ) ) {
+		return;
+	}
+	set_transient( 'ashade_child_setup_running', 1, 600 );
+	set_time_limit( 300 );
+
+	try {
+		$images = ashade_child_setup_image_urls();
 	$ids    = array();
 	foreach ( $images as $key => $spec ) {
 		$r = ashade_child_sideload_image( $spec['url'], $spec['title'] );
@@ -911,8 +1003,16 @@ function ashade_child_run_services_site_setup() {
 
 	update_option( 'blogname', 'Home Services Co.' );
 	update_option( 'blogdescription', 'Cleaning, repairs & seasonal care for your property.' );
+
+	if ( wp_get_theme( 'ashade-child' )->exists() ) {
+		switch_theme( 'ashade-child' );
+	}
+
 	update_option( 'ashade_child_services_site_built', 1 );
 	update_option( 'ashade_child_starter_pack_version', ASHADE_CHILD_STARTER_VERSION );
+	} finally {
+		delete_transient( 'ashade_child_setup_running' );
+	}
 }
 
 /**

@@ -49,6 +49,9 @@ services:
       mountPath: /var/www/html/wp-content/uploads
       sizeGB: 5
     envVars:
+      # First deploy: allows starter content + menu fix without wp-admin. Set to 0 after the site looks right.
+      - key: ASHADE_CHILD_AUTO_SETUP
+        value: "1"
       # Use `host` only — `hostport` is the HTTP probe port (10000), not MySQL (3306).
       - key: WORDPRESS_DB_HOST
         fromService:
