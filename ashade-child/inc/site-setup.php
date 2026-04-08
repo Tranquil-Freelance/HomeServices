@@ -124,6 +124,42 @@ function ashade_child_attachment_id_from_rwmb_image( $item ) {
 }
 
 /**
+ * Read home page Meta Box fields without the Meta Box plugin: Ashade_Core::get_rwmb() returns
+ * defaults when RWMB_Loader is missing, even if setup stored values with update_post_meta().
+ *
+ * @param string     $key     Field id (e.g. ashade-home-bg-gallery).
+ * @param mixed|null $default Same defaults as theme templates expect.
+ * @return mixed
+ */
+function ashade_child_meta_value_is_present( $v ) {
+	if ( null === $v || false === $v || '' === $v ) {
+		return false;
+	}
+	if ( is_array( $v ) && 0 === count( $v ) ) {
+		return false;
+	}
+	return true;
+}
+
+function ashade_child_get_home_meta( $key, $default = null ) {
+	$post_id = get_queried_object_id();
+	if ( ! $post_id ) {
+		return $default;
+	}
+	if ( class_exists( 'RWMB_Loader' ) && function_exists( 'rwmb_meta' ) ) {
+		$v = rwmb_meta( $key, array(), $post_id );
+		if ( ashade_child_meta_value_is_present( $v ) ) {
+			return $v;
+		}
+	}
+	$raw = get_post_meta( $post_id, $key, true );
+	if ( ashade_child_meta_value_is_present( $raw ) ) {
+		return $raw;
+	}
+	return $default;
+}
+
+/**
  * Attachment IDs saved at setup (hero, slide2, …) for services HTML + home works panel.
  *
  * @return array<string, int>
@@ -149,13 +185,13 @@ function ashade_child_home_contacts_panel_html() {
 	if ( ! class_exists( 'Ashade_Core' ) ) {
 		return '';
 	}
-	$state = Ashade_Core::get_rwmb( 'ashade-home-contacts-state', 'no' );
+	$state = ashade_child_get_home_meta( 'ashade-home-contacts-state', 'no' );
 	if ( 'yes' !== $state && 'other' !== $state ) {
 		return '';
 	}
-	$intro     = Ashade_Core::get_rwmb( 'ashade-home-contacts-intro' );
-	$shortcode = Ashade_Core::get_rwmb( 'ashade-home-contacts-shortcode' );
-	$list_on   = Ashade_Core::get_rwmb( 'ashade-home-contacts-list-state', 'no' );
+	$intro     = ashade_child_get_home_meta( 'ashade-home-contacts-intro' );
+	$shortcode = ashade_child_get_home_meta( 'ashade-home-contacts-shortcode' );
+	$list_on   = ashade_child_get_home_meta( 'ashade-home-contacts-list-state', 'no' );
 	$col_main  = ( 'yes' === $list_on ) ? '8' : '12';
 
 	ob_start();
@@ -176,13 +212,13 @@ function ashade_child_home_contacts_panel_html() {
 			</div>
 			<?php if ( 'yes' === $list_on ) : ?>
 				<?php
-				$lo    = Ashade_Core::get_rwmb( 'ashade-home-contacts-list-overhead' );
-				$lt    = Ashade_Core::get_rwmb( 'ashade-home-contacts-list-title' );
-				$icons = Ashade_Core::get_rwmb( 'ashade-home-contacts-list-icons' );
-				$loc   = Ashade_Core::get_rwmb( 'ashade-home-contacts-list-location' );
-				$ph    = Ashade_Core::get_rwmb( 'ashade-home-contacts-list-phone' );
-				$em    = Ashade_Core::get_rwmb( 'ashade-home-contacts-list-email' );
-				$soc   = Ashade_Core::get_rwmb( 'ashade-home-contacts-list-socials' );
+				$lo    = ashade_child_get_home_meta( 'ashade-home-contacts-list-overhead' );
+				$lt    = ashade_child_get_home_meta( 'ashade-home-contacts-list-title' );
+				$icons = ashade_child_get_home_meta( 'ashade-home-contacts-list-icons' );
+				$loc   = ashade_child_get_home_meta( 'ashade-home-contacts-list-location' );
+				$ph    = ashade_child_get_home_meta( 'ashade-home-contacts-list-phone' );
+				$em    = ashade_child_get_home_meta( 'ashade-home-contacts-list-email' );
+				$soc   = ashade_child_get_home_meta( 'ashade-home-contacts-list-socials' );
 				?>
 			<div class="ashade-col col-4">
 				<div class="ashade-contact-details">
