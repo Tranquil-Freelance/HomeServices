@@ -22,6 +22,9 @@ services:
       - key: MYSQL_ROOT_PASSWORD
         generateValue: true
 
+  # Web: themes are baked into the image; start.sh overwrites wp-content/themes/ashade* on boot
+  # so WordPress’s entrypoint “skip existing folders” behavior cannot leave stale child theme files.
+  # If a deploy still looks old: Render Dashboard → Manual Deploy → “Clear build cache & deploy”.
   - type: web
     name: home-services
     runtime: docker

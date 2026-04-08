@@ -1,6 +1,39 @@
 #!/bin/bash
 set -e
 
+# WordPress docker-entrypoint skips copying wp-content/*/*/ paths that already exist on disk
+# (see docker-library/wordpress#506). Stale ashade / ashade-child folders then never update on deploy.
+# After WordPress extracts into /var/www/html, overwrite our bundled themes from the image layer.
+ashade_child_sync_bundled_themes() {
+	local src="/usr/src/wordpress/wp-content/themes"
+	local dest="/var/www/html/wp-content/themes"
+	if [[ ! -d "${src}/ashade-child" ]]; then
+		echo ">>> (skip) No bundled ashade-child in ${src}"
+		return 0
+	fi
+	if [[ ! -d "${dest}" ]]; then
+		return 0
+	fi
+	echo ">>> Overwriting Ashade themes from image → ${dest} (deploy-safe refresh)"
+	rm -rf "${dest}/ashade" "${dest}/ashade-child"
+	mkdir -p "${dest}"
+	cp -a "${src}/ashade" "${src}/ashade-child" "${dest}/"
+	chown -R www-data:www-data "${dest}/ashade" "${dest}/ashade-child" 2>/dev/null || true
+	echo ">>> Theme sync complete ($(grep 'Version:' "${dest}/ashade-child/style.css" 2>/dev/null | head -1 || echo 'ashade-child'))"
+}
+
+(
+	set +e
+	sleep 2
+	for _i in $( seq 1 120 ); do
+		if [[ -f /var/www/html/wp-includes/version.php ]] && [[ -d /var/www/html/wp-content/themes ]]; then
+			ashade_child_sync_bundled_themes
+			break
+		fi
+		sleep 1
+	done
+) &
+
 # Render private MySQL exposes 3306; blueprint `hostport` wrongly used port 10000 (probe).
 if [[ -n "${WORDPRESS_DB_HOST:-}" ]]; then
   case "$WORDPRESS_DB_HOST" in
