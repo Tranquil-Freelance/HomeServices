@@ -44,6 +44,27 @@ if [[ -n "${WORDPRESS_DB_HOST:-}" ]]; then
   echo ">>> WORDPRESS_DB_HOST=${WORDPRESS_DB_HOST}"
 fi
 
+# Give Render private DNS time; log clearly if MySQL hostname never appears (mislinked env / missing pserv).
+if [[ -n "${WORDPRESS_DB_HOST:-}" ]]; then
+	db_hostonly="${WORDPRESS_DB_HOST%%:*}"
+	if [[ -n "$db_hostonly" ]]; then
+		_ok=0
+		for _i in $( seq 1 45 ); do
+			if getent ahosts "$db_hostonly" >/dev/null 2>&1; then
+				echo ">>> Database hostname resolves on private network: ${db_hostonly}"
+				_ok=1
+				break
+			fi
+			echo ">>> Waiting for DB host DNS (${db_hostonly}) attempt ${_i}/45..."
+			sleep 2
+		done
+		if [[ "$_ok" -ne 1 ]]; then
+			echo ">>> ERROR: Cannot resolve DB host '${db_hostonly}'. On Render: start the MySQL private service,"
+			echo ">>> use the Internal address from its Connect tab as WORDPRESS_DB_HOST (or re-apply Blueprint fromService)."
+		fi
+	fi
+fi
+
 echo ">>> Ensuring writable uploads directory..."
 mkdir -p /var/www/html/wp-content/uploads
 chown -R www-data:www-data /var/www/html/wp-content/uploads

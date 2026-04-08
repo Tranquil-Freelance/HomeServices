@@ -1,4 +1,16 @@
 # WordPress cannot use Render Postgres without non-standard drivers. We use a private MySQL service.
+#
+# If you see "Error establishing a database connection" / getaddrinfo failed:
+# 1) Private MySQL must exist and be Running (Dashboard → home-services-mysql).
+# 2) Web + MySQL must be same Render region (below: oregon) and workspace.
+# 3) WORDPRESS_DB_HOST must be linked from the MySQL service (Blueprint / Environment →
+#    reference icon), NOT a guessed name. Internal host often looks like name+suffix
+#    (see MySQL service → Connect / internal address).
+# 4) Apply this file as a Blueprint so both services are created together, or link manually.
+# 5) Professional "environment isolation" can block cross-environment traffic — keep both
+#    services in the same environment/project.
+previews:
+  generation: manual
 services:
   - type: pserv
     name: home-services-mysql
