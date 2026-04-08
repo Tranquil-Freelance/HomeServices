@@ -1,6 +1,6 @@
 <?php
 /**
- * One-time builder: home-services pages, Ashade Home meta, main menu, images from Unsplash.
+ * One-time builder: service-business pages, Ashade Home meta, main menu, images from Unsplash.
  * Runs once on first wp-admin load by an administrator (or add ?ashade_run_setup=1&_wpnonce=...).
  */
 
@@ -9,7 +9,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /** Bump when starter content / migration logic changes (triggers one-time fix on existing sites). */
-define( 'ASHADE_CHILD_STARTER_VERSION', 4 );
+define( 'ASHADE_CHILD_STARTER_VERSION', 5 );
+
+/** Display name & placeholders for starter content (change here to rebrand). */
+define( 'ASHADE_CHILD_BRAND_NAME', 'CAE Services' );
+define( 'ASHADE_CHILD_BRAND_TAGLINE', 'Cleaning, repairs & seasonal care for your property.' );
+define( 'ASHADE_CHILD_BRAND_EMAIL', 'hello@caeservices.example' );
 
 /**
  * Render / CI: set ASHADE_CHILD_AUTO_SETUP=1 so the first front-end hit (after WP is installed)
@@ -41,8 +46,12 @@ function ashade_child_run_starter_migrations_now() {
 			ashade_child_run_starter_migration_v3();
 		}
 		$v = (int) get_option( 'ashade_child_starter_pack_version', 0 );
-		if ( $v < ASHADE_CHILD_STARTER_VERSION ) {
+		if ( $v < 4 ) {
 			ashade_child_run_starter_migration_v4_contact_page();
+		}
+		$v = (int) get_option( 'ashade_child_starter_pack_version', 0 );
+		if ( $v < ASHADE_CHILD_STARTER_VERSION ) {
+			ashade_child_run_starter_migration_v5_cae_branding();
 		}
 	} finally {
 		delete_transient( 'ashade_child_migrate_lock' );
@@ -330,11 +339,11 @@ function ashade_child_write_home_template_meta( $home_id, $services_id, $gallery
 	);
 	$set_meta( 'ashade-home-contacts-list-state', 'yes' );
 	$set_meta( 'ashade-home-contacts-list-overhead', 'reach us' );
-	$set_meta( 'ashade-home-contacts-list-title', 'Home Services' );
+	$set_meta( 'ashade-home-contacts-list-title', ASHADE_CHILD_BRAND_NAME );
 	$set_meta( 'ashade-home-contacts-list-icons', 1 );
 	$set_meta( 'ashade-home-contacts-list-location', 'Serving metro & surrounding neighborhoods — on-site visits by appointment.' );
 	$set_meta( 'ashade-home-contacts-list-phone', '(555) 014-2270' );
-	$set_meta( 'ashade-home-contacts-list-email', 'hello@homeservices.example' );
+	$set_meta( 'ashade-home-contacts-list-email', ASHADE_CHILD_BRAND_EMAIL );
 	$set_meta( 'ashade-home-contacts-list-socials', 1 );
 	$set_meta( 'ashade-home-contacts-position', 68 );
 }
@@ -610,6 +619,59 @@ function ashade_child_run_starter_migration_v4_contact_page() {
 			)
 		);
 	}
+	update_option( 'ashade_child_starter_pack_version', 4 );
+	$uid = get_current_user_id();
+	if ( $uid ) {
+		set_transient( 'ashade_child_migrate_notice_' . $uid, 1, 300 );
+	}
+}
+
+/**
+ * v5: rebrand site title, tagline, home contact block, About + Contact copy.
+ */
+function ashade_child_run_starter_migration_v5_cae_branding() {
+	update_option( 'blogname', ASHADE_CHILD_BRAND_NAME );
+	update_option( 'blogdescription', ASHADE_CHILD_BRAND_TAGLINE );
+
+	$home_id = (int) get_option( 'page_on_front' );
+	if ( ! $home_id ) {
+		$hp = get_page_by_path( 'home' );
+		$home_id = $hp ? (int) $hp->ID : 0;
+	}
+	if ( $home_id ) {
+		$use_rwmb = function_exists( 'rwmb_set_meta' );
+		if ( $use_rwmb ) {
+			rwmb_set_meta( $home_id, 'ashade-home-contacts-list-title', ASHADE_CHILD_BRAND_NAME );
+			rwmb_set_meta( $home_id, 'ashade-home-contacts-list-email', ASHADE_CHILD_BRAND_EMAIL );
+		}
+		update_post_meta( $home_id, 'ashade-home-contacts-list-title', ASHADE_CHILD_BRAND_NAME );
+		update_post_meta( $home_id, 'ashade-home-contacts-list-email', ASHADE_CHILD_BRAND_EMAIL );
+	}
+
+	$about_img = 0;
+	$ids         = ashade_child_get_setup_attachment_ids();
+	if ( ! empty( $ids['about'] ) ) {
+		$about_img = (int) $ids['about'];
+	}
+	$ap = get_page_by_path( 'about' );
+	if ( $ap ) {
+		wp_update_post(
+			array(
+				'ID'           => (int) $ap->ID,
+				'post_content' => ashade_child_build_about_page_html( $about_img ),
+			)
+		);
+	}
+	$cp = get_page_by_path( 'contact' );
+	if ( $cp ) {
+		wp_update_post(
+			array(
+				'ID'           => (int) $cp->ID,
+				'post_content' => ashade_child_contact_page_html(),
+			)
+		);
+	}
+
 	update_option( 'ashade_child_starter_pack_version', ASHADE_CHILD_STARTER_VERSION );
 	$uid = get_current_user_id();
 	if ( $uid ) {
@@ -671,7 +733,7 @@ function ashade_child_get_or_create_main_menu_id() {
 }
 
 /**
- * Replace all links in Main Menu with Home Services pages.
+ * Replace all links in Main Menu with starter pages (Home, Services, About, Journal, Contact).
  *
  * @param int $menu_id
  * @param int $home_id
@@ -855,7 +917,11 @@ function ashade_child_build_about_page_html( $img_id = 0 ) {
 	$url    = $img_id ? wp_get_attachment_image_url( $img_id, 'large' ) : '';
 
 	$html  = '<h2>' . esc_html__( 'Local crew, clear communication', 'ashade' ) . '</h2>';
-	$html .= '<p>' . esc_html__( 'Home Services Co. grew out of a simple frustration: talented tradespeople, but chaotic scheduling, vague quotes, and no single owner for “everything else” around the house. We built a small, accountable team that shows up on time, explains trade-offs in plain language, and leaves every space tidier than we found it.', 'ashade' ) . '</p>';
+	$html .= '<p>' . sprintf(
+		/* translators: %s: company name */
+		esc_html__( '%s grew out of a simple frustration: talented tradespeople, but chaotic scheduling, vague quotes, and no single owner for “everything else” around the house. We built a small, accountable team that shows up on time, explains trade-offs in plain language, and leaves every space tidier than we found it.', 'ashade' ),
+		esc_html( ASHADE_CHILD_BRAND_NAME )
+	) . '</p>';
 	$html .= '<p>' . esc_html__( 'Whether you need a one-time deep clean, a punch list before guests arrive, or an ongoing relationship for your home or a handful of rental units, we treat the work like it matters — because it does. You get direct phone and email access, written scopes, and photo documentation on request.', 'ashade' ) . '</p>';
 	$html .= '<h3>' . esc_html__( 'How we work', 'ashade' ) . '</h3>';
 	$html .= '<ul><li>' . esc_html__( 'On-site or video walkthrough before larger jobs', 'ashade' ) . '</li><li>' . esc_html__( 'Itemized estimates — no mystery fees', 'ashade' ) . '</li><li>' . esc_html__( 'Respect for pets, kids, and work-from-home schedules', 'ashade' ) . '</li><li>' . esc_html__( 'Fully insured; COIs for property managers on request', 'ashade' ) . '</li></ul>';
@@ -1037,8 +1103,8 @@ function ashade_child_run_services_site_setup() {
 		);
 	}
 
-	update_option( 'blogname', 'Home Services Co.' );
-	update_option( 'blogdescription', 'Cleaning, repairs & seasonal care for your property.' );
+	update_option( 'blogname', ASHADE_CHILD_BRAND_NAME );
+	update_option( 'blogdescription', ASHADE_CHILD_BRAND_TAGLINE );
 
 	if ( wp_get_theme( 'ashade-child' )->exists() ) {
 		switch_theme( 'ashade-child' );
@@ -1094,9 +1160,10 @@ HTML;
 }
 
 function ashade_child_contact_page_html() {
+	$email = ASHADE_CHILD_BRAND_EMAIL;
 	return <<<HTML
 <h2>Contact</h2>
-<p><strong>Phone:</strong> (555) 014-2270<br><strong>Email:</strong> hello@homeservices.example</p>
+<p><strong>Phone:</strong> (555) 014-2270<br><strong>Email:</strong> {$email}</p>
 <p>We typically respond within one business day. For urgent leaks or electrical hazards, please call emergency services first.</p>
 <p><em>Add a Contact Form 7 shortcode here after installing the plugin if you want a form on this page.</em></p>
 HTML;
@@ -1143,7 +1210,7 @@ function ashade_child_setup_admin_notice() {
 	}
 	if ( get_option( 'ashade_child_services_site_built' ) ) {
 		if ( isset( $_GET['ashade_setup_done'] ) ) {
-			echo '<div class="notice notice-success is-dismissible"><p>Home Services starter content, menu, and home template settings were created. Review pages under <strong>Pages</strong> and customize your details.</p></div>';
+			echo '<div class="notice notice-success is-dismissible"><p>' . esc_html( ASHADE_CHILD_BRAND_NAME ) . ' starter content, menu, and home template settings were created. Review pages under <strong>Pages</strong> and customize your details.</p></div>';
 		}
 		if ( isset( $_GET['ashade_menu_rebuilt'] ) ) {
 			echo '<div class="notice notice-success is-dismissible"><p><strong>Main Menu</strong> was cleared and rebuilt with Home, Services, About, Journal, and Contact. Open <strong>Appearance → Menus</strong> to verify.</p></div>';
@@ -1186,6 +1253,6 @@ function ashade_child_rebuild_menu_screen() {
 	}
 	$url = wp_nonce_url( admin_url( 'themes.php?ashade_rebuild_main_menu=1' ), 'ashade_rebuild_main_menu', '_wpnonce' );
 	echo '<div class="wrap"><h1>' . esc_html__( 'Rebuild main menu', 'ashade' ) . '</h1>';
-	echo '<p>' . esc_html__( 'If your navigation shows duplicate items (for example demo links plus Home Services pages), use this to remove every item in Main Menu and add Home, Services, About, Journal, and Contact again.', 'ashade' ) . '</p>';
+	echo '<p>' . esc_html__( 'If your navigation shows duplicate items (for example demo links plus your starter pages), use this to remove every item in Main Menu and add Home, Services, About, Journal, and Contact again.', 'ashade' ) . '</p>';
 	echo '<p><a href="' . esc_url( $url ) . '" class="button button-primary">' . esc_html__( 'Rebuild Main Menu now', 'ashade' ) . '</a></p></div>';
 }
