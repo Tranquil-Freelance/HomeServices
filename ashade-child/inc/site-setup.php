@@ -9,12 +9,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /** Bump when starter content / migration logic changes (triggers one-time fix on existing sites). */
-define( 'ASHADE_CHILD_STARTER_VERSION', 5 );
+define( 'ASHADE_CHILD_STARTER_VERSION', 6 );
 
 /** Display name & placeholders for starter content (change here to rebrand). */
 define( 'ASHADE_CHILD_BRAND_NAME', 'CAE Services' );
 define( 'ASHADE_CHILD_BRAND_TAGLINE', 'Cleaning, repairs & seasonal care for your property.' );
-define( 'ASHADE_CHILD_BRAND_EMAIL', 'hello@caeservices.example' );
+define( 'ASHADE_CHILD_BRAND_EMAIL', '' );
 
 /**
  * Render / CI: set ASHADE_CHILD_AUTO_SETUP=1 so the first front-end hit (after WP is installed)
@@ -50,8 +50,12 @@ function ashade_child_run_starter_migrations_now() {
 			ashade_child_run_starter_migration_v4_contact_page();
 		}
 		$v = (int) get_option( 'ashade_child_starter_pack_version', 0 );
-		if ( $v < ASHADE_CHILD_STARTER_VERSION ) {
+		if ( $v < 5 ) {
 			ashade_child_run_starter_migration_v5_cae_branding();
+		}
+		$v = (int) get_option( 'ashade_child_starter_pack_version', 0 );
+		if ( $v < ASHADE_CHILD_STARTER_VERSION ) {
+			ashade_child_run_starter_migration_v6_home_content();
 		}
 	} finally {
 		delete_transient( 'ashade_child_migrate_lock' );
@@ -332,19 +336,19 @@ function ashade_child_write_home_template_meta( $home_id, $services_id, $gallery
 
 	$set_meta( 'ashade-home-contacts-state', 'yes' );
 	$set_meta( 'ashade-home-contacts-overhead', 'get in touch' );
-	$set_meta( 'ashade-home-contacts-title', 'Book a visit' );
+	$set_meta( 'ashade-home-contacts-title', 'Request a quote' );
 	$set_meta(
 		'ashade-home-contacts-intro',
-		'Tell us what you need — deep cleaning, handyman repairs, seasonal maintenance, or a bundled home-care plan. We reply within one business day.'
+		'Tell us what you need: deep cleaning, handyman repairs, seasonal maintenance, or a bundled home-care plan. Share the property type, timeline, and any must-fix items so we can send a clear next step.'
 	);
-	$set_meta( 'ashade-home-contacts-list-state', 'yes' );
+	$set_meta( 'ashade-home-contacts-list-state', 'no' );
 	$set_meta( 'ashade-home-contacts-list-overhead', 'reach us' );
 	$set_meta( 'ashade-home-contacts-list-title', ASHADE_CHILD_BRAND_NAME );
 	$set_meta( 'ashade-home-contacts-list-icons', 1 );
-	$set_meta( 'ashade-home-contacts-list-location', 'Serving metro & surrounding neighborhoods — on-site visits by appointment.' );
-	$set_meta( 'ashade-home-contacts-list-phone', '(555) 014-2270' );
+	$set_meta( 'ashade-home-contacts-list-location', '' );
+	$set_meta( 'ashade-home-contacts-list-phone', '' );
 	$set_meta( 'ashade-home-contacts-list-email', ASHADE_CHILD_BRAND_EMAIL );
-	$set_meta( 'ashade-home-contacts-list-socials', 1 );
+	$set_meta( 'ashade-home-contacts-list-socials', 0 );
 	$set_meta( 'ashade-home-contacts-position', 68 );
 }
 
@@ -672,6 +676,41 @@ function ashade_child_run_starter_migration_v5_cae_branding() {
 		);
 	}
 
+	update_option( 'ashade_child_starter_pack_version', 5 );
+	$uid = get_current_user_id();
+	if ( $uid ) {
+		set_transient( 'ashade_child_migrate_notice_' . $uid, 1, 300 );
+	}
+}
+
+/**
+ * v6: add visible homepage copy and remove fake starter contact details.
+ */
+function ashade_child_run_starter_migration_v6_home_content() {
+	$ids = ashade_child_get_setup_attachment_ids();
+	ashade_child_refresh_starter_pages_and_home_meta( $ids );
+
+	$about_img = ! empty( $ids['about'] ) ? (int) $ids['about'] : 0;
+	$ap        = get_page_by_path( 'about' );
+	if ( $ap ) {
+		wp_update_post(
+			array(
+				'ID'           => (int) $ap->ID,
+				'post_content' => ashade_child_build_about_page_html( $about_img ),
+			)
+		);
+	}
+
+	$cp = get_page_by_path( 'contact' );
+	if ( $cp ) {
+		wp_update_post(
+			array(
+				'ID'           => (int) $cp->ID,
+				'post_content' => ashade_child_contact_page_html(),
+			)
+		);
+	}
+
 	update_option( 'ashade_child_starter_pack_version', ASHADE_CHILD_STARTER_VERSION );
 	$uid = get_current_user_id();
 	if ( $uid ) {
@@ -869,7 +908,7 @@ function ashade_child_build_services_page_html( array $ids ) {
 		array(
 			'key'   => 'slide2',
 			'title' => __( 'Handyman & small repairs', 'ashade' ),
-			'html'  => '<p>' . esc_html__( 'One visit for the “small stuff” that never gets scheduled: drywall patches, door adjustments, caulking, picture hanging, shelving, minor carpentry, and fixture swaps. We quote before we cut, and we protect floors and furniture while we work.', 'ashade' ) . '</p><ul><li>' . esc_html__( 'Hardware stores runs included on most jobs', 'ashade' ) . '</li><li>' . esc_html__( 'Licensed partners for plumbing & electrical when required', 'ashade' ) . '</li><li>' . esc_html__( 'Photo recap when the job is done', 'ashade' ) . '</li></ul>',
+			'html'  => '<p>' . esc_html__( 'One visit for the small repairs that never get scheduled: drywall patches, door adjustments, caulking, picture hanging, shelving, minor carpentry, and fixture swaps. We confirm the scope before work starts, and we protect floors and furniture while we work.', 'ashade' ) . '</p><ul><li>' . esc_html__( 'Hardware store runs available when materials are needed', 'ashade' ) . '</li><li>' . esc_html__( 'Licensed trade partners for plumbing and electrical work when required', 'ashade' ) . '</li><li>' . esc_html__( 'Photo recap when the job is done', 'ashade' ) . '</li></ul>',
 		),
 		array(
 			'key'   => 'slide3',
@@ -879,7 +918,7 @@ function ashade_child_build_services_page_html( array $ids ) {
 		array(
 			'key'   => 'services',
 			'title' => __( 'Concierge bundles for homes & small portfolios', 'ashade' ),
-			'html'  => '<p>' . esc_html__( 'Combine cleaning, handyman blocks, and seasonal visits into one plan with a single point of contact. Ideal for busy homeowners, remote landlords, and small HOAs who want predictable care without managing five vendors.', 'ashade' ) . '</p><ul><li>' . esc_html__( 'Monthly or quarterly cadences', 'ashade' ) . '</li><li>' . esc_html__( 'Slack-style updates available', 'ashade' ) . '</li><li>' . esc_html__( 'Emergency triage queue for bundle members', 'ashade' ) . '</li></ul>',
+			'html'  => '<p>' . esc_html__( 'Combine cleaning, handyman blocks, and seasonal visits into one plan with a single point of contact. Ideal for busy homeowners, remote landlords, and small HOAs who want predictable care without managing several vendors.', 'ashade' ) . '</p><ul><li>' . esc_html__( 'Monthly or quarterly cadences', 'ashade' ) . '</li><li>' . esc_html__( 'Status updates by email or text when requested', 'ashade' ) . '</li><li>' . esc_html__( 'Priority scheduling for bundle members', 'ashade' ) . '</li></ul>',
 		),
 	);
 
@@ -904,7 +943,7 @@ function ashade_child_build_services_page_html( array $ids ) {
 	}
 
 	$out .= '</div>';
-	$out .= '<p class="ashade-intro align-center" style="margin-top:48px;"><strong>' . esc_html__( 'Ready when you are.', 'ashade' ) . '</strong> ' . esc_html__( 'Use Book a visit on the home screen or open Contact — we respond within one business day with a clear estimate.', 'ashade' ) . '</p>';
+	$out .= '<p class="ashade-intro align-center" style="margin-top:48px;"><strong>' . esc_html__( 'Ready when you are.', 'ashade' ) . '</strong> ' . esc_html__( 'Use Request a quote on the home screen or open Contact so we can review the scope and send a clear next step.', 'ashade' ) . '</p>';
 
 	return $out;
 }
@@ -922,7 +961,7 @@ function ashade_child_build_about_page_html( $img_id = 0 ) {
 		esc_html__( '%s grew out of a simple frustration: talented tradespeople, but chaotic scheduling, vague quotes, and no single owner for “everything else” around the house. We built a small, accountable team that shows up on time, explains trade-offs in plain language, and leaves every space tidier than we found it.', 'ashade' ),
 		esc_html( ASHADE_CHILD_BRAND_NAME )
 	) . '</p>';
-	$html .= '<p>' . esc_html__( 'Whether you need a one-time deep clean, a punch list before guests arrive, or an ongoing relationship for your home or a handful of rental units, we treat the work like it matters — because it does. You get direct phone and email access, written scopes, and photo documentation on request.', 'ashade' ) . '</p>';
+	$html .= '<p>' . esc_html__( 'Whether you need a one-time deep clean, a punch list before guests arrive, or an ongoing relationship for your home or a handful of rental units, we treat the work like it matters because it does. You get written scopes, tidy work areas, and photo documentation on request.', 'ashade' ) . '</p>';
 	$html .= '<h3>' . esc_html__( 'How we work', 'ashade' ) . '</h3>';
 	$html .= '<ul><li>' . esc_html__( 'On-site or video walkthrough before larger jobs', 'ashade' ) . '</li><li>' . esc_html__( 'Itemized estimates — no mystery fees', 'ashade' ) . '</li><li>' . esc_html__( 'Respect for pets, kids, and work-from-home schedules', 'ashade' ) . '</li><li>' . esc_html__( 'Fully insured; COIs for property managers on request', 'ashade' ) . '</li></ul>';
 
@@ -1137,7 +1176,7 @@ function ashade_child_services_page_html_fallback() {
 <h3>Concierge bundles</h3>
 <p>One plan: recurring visits plus a priority queue for urgent fixes — ideal for homeowners and property managers.</p>
 
-<p><strong>Ready?</strong> Use <em>Book a visit</em> on the home screen or open the Contact page — we’ll scope the work and send a clear estimate.</p>
+<p><strong>Ready?</strong> Use <em>Request a quote</em> on the home screen or open the Contact page so we can review the scope and send a clear next step.</p>
 HTML;
 }
 
@@ -1160,12 +1199,11 @@ HTML;
 }
 
 function ashade_child_contact_page_html() {
-	$email = ASHADE_CHILD_BRAND_EMAIL;
 	return <<<HTML
 <h2>Contact</h2>
-<p><strong>Phone:</strong> (555) 014-2270<br><strong>Email:</strong> {$email}</p>
-<p>We typically respond within one business day. For urgent leaks or electrical hazards, please call emergency services first.</p>
-<p><em>Add a Contact Form 7 shortcode here after installing the plugin if you want a form on this page.</em></p>
+<p>Tell us what you need handled, when you would like the work done, and whether the property is occupied, vacant, or preparing for turnover. We will use those details to scope the right cleaning, repair, or maintenance visit.</p>
+<p>For urgent leaks, gas smells, active electrical hazards, or life-safety concerns, contact emergency services or a licensed emergency trade provider first.</p>
+<p><em>Add your preferred phone number, email address, or contact form shortcode here before launch.</em></p>
 HTML;
 }
 

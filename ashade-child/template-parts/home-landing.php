@@ -69,7 +69,7 @@ $contacts_state = is_scalar( $contacts_state ) ? (string) $contacts_state : 'yes
 $show_contacts  = in_array( $contacts_state, array( 'yes', 'other' ), true );
 
 $contacts_oh  = ashade_child_get_home_meta( 'ashade-home-contacts-overhead', 'get in touch' );
-$contacts_ttl = ashade_child_get_home_meta( 'ashade-home-contacts-title', 'Book a visit' );
+$contacts_ttl = ashade_child_get_home_meta( 'ashade-home-contacts-title', 'Request a quote' );
 
 ?>
 <?php if ( 'slider' === $bg_style && count( $slides ) > 1 ) : ?>
@@ -87,6 +87,16 @@ $contacts_ttl = ashade_child_get_home_meta( 'ashade-home-contacts-title', 'Book 
 <div class="ashade-page-title-wrap is-inactive">
 	<h1 class="ashade-page-title is-inactive"><span>&nbsp;</span>&nbsp;</h1>
 </div>
+
+<section class="ashade-child-home-hero" aria-label="<?php esc_attr_e( 'Home services introduction', 'ashade' ); ?>">
+	<p class="ashade-child-home-hero__eyebrow"><?php esc_html_e( 'Cleaning, repairs, and seasonal care', 'ashade' ); ?></p>
+	<h2><?php esc_html_e( 'Reliable help for the jobs that keep your home running.', 'ashade' ); ?></h2>
+	<p><?php esc_html_e( 'Book one trusted team for deep cleaning, handyman repairs, preventative maintenance, and property-care bundles. We scope the work clearly, protect your space, and send practical updates when the job is done.', 'ashade' ); ?></p>
+	<div class="ashade-child-home-hero__actions">
+		<a href="#" class="ashade-child-home-hero__button ashade-home-link--a" data-event="works"><?php esc_html_e( 'View services', 'ashade' ); ?></a>
+		<a href="#" class="ashade-child-home-hero__button is-secondary ashade-home-link--a" data-event="contacts"><?php esc_html_e( 'Request a quote', 'ashade' ); ?></a>
+	</div>
+</section>
 
 <?php if ( $show_works ) : ?>
 <div class="ashade-home-link-wrap ashade-home-link--works is-inactive">
