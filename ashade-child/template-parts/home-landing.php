@@ -93,8 +93,8 @@ $contacts_ttl = ashade_child_get_home_meta( 'ashade-home-contacts-title', 'Reque
 	<h2><?php esc_html_e( 'Reliable help for the jobs that keep your home running.', 'ashade' ); ?></h2>
 	<p><?php esc_html_e( 'Book one trusted team for deep cleaning, handyman repairs, preventative maintenance, and property-care bundles. We scope the work clearly, protect your space, and send practical updates when the job is done.', 'ashade' ); ?></p>
 	<div class="ashade-child-home-hero__actions">
-		<a href="#" class="ashade-child-home-hero__button ashade-home-link--a" data-event="works"><?php esc_html_e( 'View services', 'ashade' ); ?></a>
-		<a href="#" class="ashade-child-home-hero__button is-secondary ashade-home-link--a" data-event="contacts"><?php esc_html_e( 'Request a quote', 'ashade' ); ?></a>
+		<button type="button" class="ashade-child-home-hero__button ashade-child-home-trigger" data-event="works"><?php esc_html_e( 'View services', 'ashade' ); ?></button>
+		<button type="button" class="ashade-child-home-hero__button is-secondary ashade-child-home-trigger" data-event="contacts"><?php esc_html_e( 'Request a quote', 'ashade' ); ?></button>
 	</div>
 </section>
 
