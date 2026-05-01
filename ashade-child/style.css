@@ -13,9 +13,9 @@ Tags: animated, creative, dark, fullscreen, gallery, lite, minimal, modern, para
 
 */
 
-/* Hide original Ashade branding mark. */
-.ashade-logo-block {
-	display: none !important;
+/* Hide original Ashade branding mark without shifting the navbar. */
+.ashade-logo-block .ashade-logo {
+	visibility: hidden;
 }
 
 /* Homepage intro */
@@ -87,6 +87,12 @@ Tags: animated, creative, dark, fullscreen, gallery, lite, minimal, modern, para
 .ashade-child-home-hero__button.is-secondary:hover {
 	color: #111111;
 	background: #ffffff;
+}
+body.ashade-content-shown .ashade-child-home-hero {
+	opacity: 0 !important;
+	pointer-events: none;
+	transform: translateY(18px);
+	transition: opacity 300ms ease, transform 300ms ease;
 }
 @keyframes ashade-child-home-hero-in {
 	to {
